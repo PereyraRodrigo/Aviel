@@ -1,0 +1,44 @@
+.clients{
+    font-family: $SecondFont;
+    margin: 270px 3.12rem;
+    &__title{
+        color: $FontClients;
+        font-size: 43px;
+        margin-bottom: 55px;
+    }
+    &__box{
+        color: $FontClients;
+        width: 45%;
+        margin: auto;
+        font-size: 24px;
+    }
+    &__txt{
+        margin-bottom: 45px;
+    }
+    &__brands{
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: auto;
+        align-items: first baseline;
+        img{
+            max-width: 163px;
+        }
+    }
+
+}
+
+@media all and (max-width: 768px){
+    .clients {
+        margin: 100px 3.12rem;
+    }
+    .clients__title {
+        font-size: 33px;
+    }
+    .clients__box{
+        width: auto;
+        font-size: 19px;        
+    }
+}

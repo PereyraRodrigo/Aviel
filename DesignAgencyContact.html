@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="Have a project or an idea you'd like to collaborate on? Tell us about your project idea, we would love to hear from you!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Aviel Design Agency Contact</title>
+</head>
+<body>
+	<nav class="nav1"><!--Header-->
+        <div class="container1">
+            <div class="logo">
+                <a href="index.html"><img class="header__logo" src="media/logo.png" alt="logo"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#clients">Clients</a></li>
+                    <li><a href="DesignAgencyContact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav><!--Header end-->
+	<article class="contact">
+		<div>
+			<div class="contact__block">
+				<p class="contact__title font-weights-bold center">Contact us</p>
+				<h2 class="contact__txt font-weights-medium center">How can we help you? Have a project or an idea you'd like to collaborate on? Fill in this form with your info and we will gladly contact you.</h2>
+			</div>
+		</div>
+		<div class="formu">			
+			<form method="POST">		 			 		
+				<div class="formu__block">
+					<div>
+						<p class="formu__subtitle font-weights-bold">We would love to hear from you!</p>
+						<input type="text" required name="nombre" placeholder="Nombre y apellido">
+						<input type="email" required name="email" placeholder="Email">
+						<input type="text" required name="msj" placeholder="Asunto">
+						<textarea name="mensaje" placeholder="Mensaje"></textarea>
+						<input type="submit" name="enviar" value="Enviar">
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.851028634936!2d-58.42793353022459!3d-34.5924581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75ea916f355%3A0xf15778e2e5668bad!2zT01BVElDIHwgcHJvZ3JhbWFjacOzbiArIGRpc2XDsW8!5e0!3m2!1ses-419!2sar!4v1623227355151!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>				
+			</form>
+		</div>
+	</article>
+	<div class="separador2"></div>
+	<footer class="footer"><!--Footer-->		
+		<p class="footer__legales">© 2021 Aviel</p>
+		<a class="footer__icons" href="https://dribbble.com/"><img src="media/dribble.png" alt="dribble Icon"></a>
+		<a class="footer__icons" href="https://twitter.com/"><img src="media/twitter.png" alt="twitter Icon"></a>
+		<a class="footer__icons" href="https://www.instagram.com/"><img src="media/instagram.png" alt="instagram Icon"></a>
+		<a class="footer__icons" href="https://ar.linkedin.com/"><img src="media/linkedin.png" alt="linkedin Icon"></a>
+		<a class="footer__icons marR" href="https://www.behance.net/"><img src="media/behance.png" alt="behance Icon"></a>
+	</footer><!--Footer fin-->
+
+
+	<!-- Jquery needed -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script src="js/script.js"></script>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--Navbar stuff-->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav1').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav1').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>

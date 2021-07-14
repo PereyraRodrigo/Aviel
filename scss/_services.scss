@@ -1,0 +1,22 @@
+.servicios{
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em;
+	width: 70%;
+	margin: auto;
+    color: white;
+    padding-bottom: 15em;
+    &__cajas{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        margin-top: 20px;
+        div{
+            flex: 1;
+            padding: 1rem;
+            margin-top: 20px;
+            border: 1px solid white;
+        }
+    }    
+}
