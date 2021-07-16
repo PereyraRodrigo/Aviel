@@ -19,5 +19,6 @@
     "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
-    ]
+    ],
+    "workbench.colorTheme": "SynthWave '84"
 }

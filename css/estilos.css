@@ -652,7 +652,7 @@ body ul a {
   margin-top: 20px;
 }
 
-.servicios__cajas div {
+.servicios__cajas article {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -690,6 +690,7 @@ body ul a {
   margin-bottom: 165px;
 }
 
+
 .portfolio__container__gallery {
   display: -ms-grid;
   display: grid;
@@ -698,7 +699,12 @@ body ul a {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 1.5em;
-      grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
+      grid-template-areas: "img-1 img-2 img-3 img-3"
+ "img-4 img-4 img-3 img-3"
+ "img-5 img-5 img-6 img-7"
+ "img-8 img-8 img-9 img-10"
+ "img-8 img-8 img-12 img-12"
+ "img-11 img-11 img-12 img-12";
 }
 
 .portfolio__container__gallery div {
@@ -874,8 +880,13 @@ body ul a {
   .portfolio__title {
     font-size: 45px;
   }
-  .portfolio__container__gallery {
-        grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
+  .portfolio__container__gallery {  
+        grid-template-areas: "img-1 img-2 img-3 img-3"
+ "img-4 img-4 img-3 img-3"
+ "img-5 img-5 img-6 img-7"
+ "img-8 img-8 img-9 img-10"
+ "img-8 img-8 img-12 img-12"
+ "img-11 img-11 img-12 img-12";
   }
   .portfolio__container__gallery div {
     height: 20em;
@@ -893,7 +904,18 @@ body ul a {
 
 @media all and (max-width: 576px) {
   .portfolio__container__gallery {
-        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12";
+        grid-template-areas: "img-1 img-1 img-1 img-1"
+ "img-2 img-2 img-2 img-2"
+ "img-3 img-3 img-3 img-3"
+ "img-4 img-4 img-4 img-4"
+ "img-5 img-5 img-5 img-5"
+ "img-6 img-6 img-6 img-6"
+ "img-7 img-7 img-7 img-7"
+ "img-8 img-8 img-8 img-8"
+ "img-9 img-9 img-9 img-9"
+ "img-10 img-10 img-10 img-10"
+ "img-11 img-11 img-11 img-11"
+ "img-12 img-12 img-12 img-12";
   }
   .portfolio__container__gallery div,
   .img-1,
