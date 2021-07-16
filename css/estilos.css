@@ -415,16 +415,117 @@ body ul a {
   background-color: #ef0c75;
 }
 
-.carousel-control-prev-icon {
-  background-image: url("../media/leftarrow.png");
+/* .carousel-control-prev-icon {
+    background-image: url("../media/leftarrow.png");
 }
-
 .carousel-control-next-icon {
-  background-image: url("../media/rightarrow.png");
+    background-image: url("../media/rightarrow.png");
+}
+.carousel-indicators li {
+    background-color: black;
+} */
+.carousel {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.carousel-indicators li {
+.viewport {
+  width: 100%;
+  height: 100%;
+  position: relative;
   background-color: black;
+}
+
+.slide-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slide-container > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-animation-name: swipe;
+          animation-name: swipe;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  /* 5 * number of slides. */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+          animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  z-index: 1;
+  position: absolute;
+  background-color: white;
+}
+
+@-webkit-keyframes swipe {
+  0% {
+    z-index: 1;
+    will-change: width;
+  }
+  15% {
+    width: 0;
+    visibility: hidden;
+  }
+  30% {
+    z-index: 0;
+    width: 100%;
+  }
+  65.9% {
+    /* (Numer of slides * 10) + 36 - 0.1. */
+    z-index: 0;
+    visibility: hidden;
+  }
+  66% {
+    /* (Numer of slides * 10) + 36. */
+    visibility: visible;
+  }
+}
+
+@keyframes swipe {
+  0% {
+    z-index: 1;
+    will-change: width;
+  }
+  15% {
+    width: 0;
+    visibility: hidden;
+  }
+  30% {
+    z-index: 0;
+    width: 100%;
+  }
+  65.9% {
+    /* (Numer of slides * 10) + 36 - 0.1. */
+    z-index: 0;
+    visibility: hidden;
+  }
+  66% {
+    /* (Numer of slides * 10) + 36. */
+    visibility: visible;
+  }
+}
+
+.slide-1 {
+  background: url(../media/slider3.jpg) no-repeat center center;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.slide-2 {
+  background: url(../media/slider2.jpg) no-repeat center center;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.slide-3 {
+  background: url(../media/slider1.jpg) no-repeat center center;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .footer {
@@ -560,7 +661,7 @@ body ul a {
   border: 1px solid white;
 }
 
-.portContPadre {
+.portfolio {
   font-family: "Lato", sans-serif;
   font-size: 10px;
   width: 100%;
@@ -574,23 +675,23 @@ body ul a {
           flex-direction: column;
 }
 
-.PortTitle {
+.portfolio__title {
   font-size: 55px;
   margin-left: 54px;
   margin-top: 65px;
   margin-bottom: 65px;
 }
 
-.portfolioContainer {
+.portfolio__container {
   font-size: 10px;
-  width: 100%;
+  width: 94%;
   /**max-width: 160em;**/
   margin: auto;
-  padding: 0 4.5em;
   margin-bottom: 165px;
 }
 
-.portfolioGallery {
+
+.portfolio__container__gallery {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -598,10 +699,15 @@ body ul a {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 1.5em;
-      grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
+      grid-template-areas: "img-1 img-2 img-3 img-3"
+ "img-4 img-4 img-3 img-3"
+ "img-5 img-5 img-6 img-7"
+ "img-8 img-8 img-9 img-10"
+ "img-8 img-8 img-12 img-12"
+ "img-11 img-11 img-12 img-12";
 }
 
-.portfolioGallery a {
+.portfolio__container__gallery div {
   width: 100%;
   height: 40em;
   background-position: center;
@@ -619,9 +725,9 @@ body ul a {
           justify-content: center;
 }
 
-.portfolioGallery a p {
+.portfolio__container__gallery div p {
   position: relative;
-  z-index: 100;
+  z-index: 99;
   padding: 1em 3em;
   opacity: 0;
   -webkit-transition: opacity .5s;
@@ -629,7 +735,7 @@ body ul a {
   color: white;
 }
 
-.portfolioGallery a::before {
+.portfolio__container__gallery div::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -642,8 +748,23 @@ body ul a {
   transition: opacity .5s;
 }
 
-.portfolioGallery a:hover p,
-.portfolioGallery a:hover::before {
+.portfolio__container__gallery__title {
+  font-size: 18px;
+}
+
+.portfolio__container__gallery__txt {
+  font-size: 14px;
+}
+
+.portcontainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio__container__gallery div:hover p,
+.portfolio__container__gallery div:hover::before {
   opacity: 1;
 }
 
@@ -756,13 +877,18 @@ body ul a {
 }
 
 @media all and (max-width: 768px) {
-  .PortTitle {
+  .portfolio__title {
     font-size: 45px;
   }
-  .portfolioGallery {
-        grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
+  .portfolio__container__gallery {  
+        grid-template-areas: "img-1 img-2 img-3 img-3"
+ "img-4 img-4 img-3 img-3"
+ "img-5 img-5 img-6 img-7"
+ "img-8 img-8 img-9 img-10"
+ "img-8 img-8 img-12 img-12"
+ "img-11 img-11 img-12 img-12";
   }
-  .portfolioGallery a {
+  .portfolio__container__gallery div {
     height: 20em;
   }
   .img-3 {
@@ -777,10 +903,21 @@ body ul a {
 }
 
 @media all and (max-width: 576px) {
-  .portfolioGallery {
-        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12";
+  .portfolio__container__gallery {
+        grid-template-areas: "img-1 img-1 img-1 img-1"
+ "img-2 img-2 img-2 img-2"
+ "img-3 img-3 img-3 img-3"
+ "img-4 img-4 img-4 img-4"
+ "img-5 img-5 img-5 img-5"
+ "img-6 img-6 img-6 img-6"
+ "img-7 img-7 img-7 img-7"
+ "img-8 img-8 img-8 img-8"
+ "img-9 img-9 img-9 img-9"
+ "img-10 img-10 img-10 img-10"
+ "img-11 img-11 img-11 img-11"
+ "img-12 img-12 img-12 img-12";
   }
-  .portfolioGallery a,
+  .portfolio__container__gallery div,
   .img-1,
   .img-6 {
     min-height: 25em;
