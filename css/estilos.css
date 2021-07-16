@@ -415,16 +415,117 @@ body ul a {
   background-color: #ef0c75;
 }
 
-.carousel-control-prev-icon {
-  background-image: url("../media/leftarrow.png");
+/* .carousel-control-prev-icon {
+    background-image: url("../media/leftarrow.png");
 }
-
 .carousel-control-next-icon {
-  background-image: url("../media/rightarrow.png");
+    background-image: url("../media/rightarrow.png");
+}
+.carousel-indicators li {
+    background-color: black;
+} */
+.carousel {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.carousel-indicators li {
+.viewport {
+  width: 100%;
+  height: 100%;
+  position: relative;
   background-color: black;
+}
+
+.slide-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slide-container > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-animation-name: swipe;
+          animation-name: swipe;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  /* 5 * number of slides. */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+          animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  z-index: 1;
+  position: absolute;
+  background-color: white;
+}
+
+@-webkit-keyframes swipe {
+  0% {
+    z-index: 1;
+    will-change: width;
+  }
+  15% {
+    width: 0;
+    visibility: hidden;
+  }
+  30% {
+    z-index: 0;
+    width: 100%;
+  }
+  65.9% {
+    /* (Numer of slides * 10) + 36 - 0.1. */
+    z-index: 0;
+    visibility: hidden;
+  }
+  66% {
+    /* (Numer of slides * 10) + 36. */
+    visibility: visible;
+  }
+}
+
+@keyframes swipe {
+  0% {
+    z-index: 1;
+    will-change: width;
+  }
+  15% {
+    width: 0;
+    visibility: hidden;
+  }
+  30% {
+    z-index: 0;
+    width: 100%;
+  }
+  65.9% {
+    /* (Numer of slides * 10) + 36 - 0.1. */
+    z-index: 0;
+    visibility: hidden;
+  }
+  66% {
+    /* (Numer of slides * 10) + 36. */
+    visibility: visible;
+  }
+}
+
+.slide-1 {
+  background: url(../media/slider3.jpg) no-repeat center center;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.slide-2 {
+  background: url(../media/slider2.jpg) no-repeat center center;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.slide-3 {
+  background: url(../media/slider1.jpg) no-repeat center center;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .footer {
@@ -583,10 +684,9 @@ body ul a {
 
 .portfolio__container {
   font-size: 10px;
-  width: 100%;
+  width: 94%;
   /**max-width: 160em;**/
   margin: auto;
-  padding: 0 4.5em;
   margin-bottom: 165px;
 }
 
@@ -621,7 +721,7 @@ body ul a {
 
 .portfolio__container__gallery div p {
   position: relative;
-  z-index: 100;
+  z-index: 99;
   padding: 1em 3em;
   opacity: 0;
   -webkit-transition: opacity .5s;

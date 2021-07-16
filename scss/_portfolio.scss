@@ -13,10 +13,9 @@
     }
     &__container{
         font-size: 10px;
-        width: 100%;
+        width: 94%;
         /**max-width: 160em;**/
         margin: auto;
-        padding: 0 4.5em;
         margin-bottom: 165px;
         &__gallery{
             display: grid;
@@ -42,7 +41,7 @@
                     justify-content: center;
                     p{
                         position: relative;
-                        z-index: 100;
+                        z-index: 99;
                         padding: 1em 3em;
                         opacity: 0;
                         transition: opacity .5s;
