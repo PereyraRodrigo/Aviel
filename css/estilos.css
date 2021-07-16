@@ -560,7 +560,7 @@ body ul a {
   border: 1px solid white;
 }
 
-.portContPadre {
+.portfolio {
   font-family: "Lato", sans-serif;
   font-size: 10px;
   width: 100%;
@@ -574,14 +574,14 @@ body ul a {
           flex-direction: column;
 }
 
-.PortTitle {
+.portfolio__title {
   font-size: 55px;
   margin-left: 54px;
   margin-top: 65px;
   margin-bottom: 65px;
 }
 
-.portfolioContainer {
+.portfolio__container {
   font-size: 10px;
   width: 100%;
   /**max-width: 160em;**/
@@ -590,19 +590,7 @@ body ul a {
   margin-bottom: 165px;
 }
 
-/**
-.portfolioGallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 1.5em;
-    grid-template-areas: 
-        "img-1 img-2 img-3 img-3"
-        "img-1 img-4 img-5 img-6"
-        "img-7 img-7 img-7 img-6";
-}
-**/
-.portfolioGallery {
+.portfolio__container__gallery {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -613,7 +601,7 @@ body ul a {
       grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
 }
 
-.portfolioGallery a {
+.portfolio__container__gallery div {
   width: 100%;
   height: 40em;
   background-position: center;
@@ -631,7 +619,7 @@ body ul a {
           justify-content: center;
 }
 
-.portfolioGallery a p {
+.portfolio__container__gallery div p {
   position: relative;
   z-index: 100;
   padding: 1em 3em;
@@ -641,7 +629,7 @@ body ul a {
   color: white;
 }
 
-.portfolioGallery a::before {
+.portfolio__container__gallery div::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -654,8 +642,23 @@ body ul a {
   transition: opacity .5s;
 }
 
-.portfolioGallery a:hover p,
-.portfolioGallery a:hover::before {
+.portfolio__container__gallery__title {
+  font-size: 18px;
+}
+
+.portfolio__container__gallery__txt {
+  font-size: 14px;
+}
+
+.portcontainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio__container__gallery div:hover p,
+.portfolio__container__gallery div:hover::before {
   opacity: 1;
 }
 
@@ -767,54 +770,14 @@ body ul a {
   cursor: pointer;
 }
 
-/**
-.img-1{
-    grid-area: img-1;
-    min-height: 51.5em;
-    background-image: url(../media/w1.jpg);
-}
-.img-2{
-    grid-area: img-2;
-    background-image: url(../media/w2.jpg);
-}
-.img-3{
-    grid-area: img-3;
-    background-image: url(../media/w3.jpg);
-}
-.img-4{
-    grid-area: img-4;
-    background-image: url(../media/w4.jpg);
-}
-.img-5{
-    grid-area: img-5;
-    background-image: url(../media/w5.jpg);
-}
-.img-6{
-    grid-area: img-6;
-    min-height: 51.5em;
-    background-image: url(../media/w6.jpg);
-}
-.img-7{
-    grid-area: img-7;
-    background-image: url(../media/w7.jpg);
-}
-**/
 @media all and (max-width: 768px) {
-  .PortTitle {
+  .portfolio__title {
     font-size: 45px;
   }
-  /*.portfolioGallery{
-        grid-template-areas: 
-            "img-1 img-1 img-2 img-2"
-            "img-1 img-1 img-3 img-3"
-            "img-4 img-4 img-5 img-5"
-            "img-6 img-7 img-7 img-7"
-            "img-6 img-7 img-7 img-7";
-    }*/
-  .portfolioGallery {
+  .portfolio__container__gallery {
         grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
   }
-  .portfolioGallery a {
+  .portfolio__container__gallery div {
     height: 20em;
   }
   .img-3 {
@@ -826,19 +789,13 @@ body ul a {
   .img-8 {
     min-height: 41.5em;
   }
-  /*.img-1{
-        min-height: 41.5em;
-    }
-    .img-6{
-        min-height: 20em;
-    }*/
 }
 
 @media all and (max-width: 576px) {
-  .portfolioGallery {
+  .portfolio__container__gallery {
         grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12";
   }
-  .portfolioGallery a,
+  .portfolio__container__gallery div,
   .img-1,
   .img-6 {
     min-height: 25em;
