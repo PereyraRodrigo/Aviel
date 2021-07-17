@@ -1,11 +1,14 @@
-$MainFont: "Quicksand", sans-serif;
-$SecondFont: 'Lato', sans-serif;
+$Font1: "Quicksand", sans-serif;
+$Font2: 'Lato', sans-serif;
 $FontColor1: white;
 $FontClients: white;
 
 /*contact stuff*/
-$font-weights:(
+/* $Fweight2 is for weights for my second font Lato*/
+$Fweight2:(
+    "thin": 100,
     "light": 300,
-    "medium": 500,
-    "bold": 700
+    "medium": 400,
+    "bold": 700,
+    "black": 900
 );

@@ -1,150 +1,223 @@
+.portfolio__gallery div:hover p,
+.portfolio__gallery div:hover::before{
+    opacity: .9;
+}
 .portfolio{
-    font-family: $SecondFont;
+    font-family: $Font2;
     font-size: 10px;
     width: 100%;
     display: flex;
     background-color: white;
     flex-direction: column;
-    &__title{
-        font-size: 55px;
-        margin-left: 54px;
-        margin-top: 65px;
-        margin-bottom: 65px;
-    }
     &__container{
         font-size: 10px;
         width: 94%;
         /**max-width: 160em;**/
         margin: auto;
         margin-bottom: 165px;
-        &__gallery{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            grid-gap: 1.5em;
-            grid-template-areas: 
-                "img-1 img-2 img-3 img-3"
-                "img-4 img-4 img-3 img-3"
-                "img-5 img-5 img-6 img-7"
-                "img-8 img-8 img-9 img-10"
-                "img-8 img-8 img-12 img-12"
-                "img-11 img-11 img-12 img-12";
-                div{
-                    width: 100%;
-                    height: 40em;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    p{
-                        position: relative;
-                        z-index: 99;
-                        padding: 1em 3em;
-                        opacity: 0;
-                        transition: opacity .5s;
-                        color: white;  
-                    }
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        background-color: rgba(0,0,0,.8);
-                        opacity: 0;
-                        transition: opacity .5s;
-                    }
-                }
-        
-        &__title{
-            font-size: 18px;
-        }
-        &__txt{
-            font-size: 14px;
-        }         
-        }
     }
+    &__title{
+        font-size: 55px;
+        margin: 65px 0px 65px 54px;
+    }    
+    &__gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5em;
+        grid-template-areas: 
+        "img-1 img-2 img-3 img-3"
+        "img-4 img-4 img-3 img-3"
+        "img-5 img-5 img-6 img-7"
+        "img-8 img-8 img-9 img-10"
+        "img-8 img-8 img-12 img-12"
+        "img-11 img-11 img-12 img-12";
+        div{
+            width: 100%;
+            height: 40em;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            p{
+                position: relative;
+                z-index: 99;
+                padding: 1em 3em;
+                opacity: 0;
+                transition: opacity .5s;
+                color: white;  
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,.8);
+                opacity: 0;
+                transition: opacity .5s;
+            }
+        }
+    }    
+    &__work-title{
+        font-size: 18px;
+        margin-bottom: -10px;
+    }
+    &__work-desc{
+        font-size: 14px;
+        margin-bottom: 11px;
+    }        
 }
-
-.portcontainer{
+.portfolio{
+    box-sizing: border-box;
+    font-family: $Font2;
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    &__container{
+        box-sizing: border-box;
+        font-size: 10px;
+        width: 100%;
+        /**max-width: 160em;**/
+        margin: auto;
+        padding: 0 4.5em;
+        margin-bottom: 165px;
+    }
+    &__title{
+        font-size: 55px;
+        margin: 65px 0px 65px 54px;
+    }    
+    &__gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5em;
+        grid-template-areas: 
+        "img-1 img-2 img-3 img-3"
+        "img-4 img-4 img-3 img-3"
+        "img-5 img-5 img-6 img-7"
+        "img-8 img-8 img-9 img-10"
+        "img-8 img-8 img-12 img-12"
+        "img-11 img-11 img-12 img-12";
+        div{
+            width: 100%;
+            height: 40em;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            p{
+                position: relative;
+                z-index: 99;
+                padding: 1em 1em;
+                opacity: 0;
+                transition: opacity .5s;
+                color: white;                
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,.8);
+                opacity: 0;
+                transition: opacity .5s;
+            }
+        }
+    }    
+    &__work-title{
+        font-size: 18px;
+        margin-bottom: -10px;
+    }
+    &__work-desc{
+        font-size: 14px;
+        margin-bottom: 11px;
+    }        
+}
+@mixin portfoliotxt{
+    cursor: pointer;
     flex-direction: column;
 }
-.portfolio__container__gallery div:hover p,
-.portfolio__container__gallery div:hover::before{
-    opacity: 1;
-}
+
 .img-1{
     grid-area: img-1;    
     background-image: url(../media/img1.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-2{
     grid-area: img-2;
     background-image: url(../media/img2.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-3{
     grid-area: img-3;
     min-height: 81.5em;
     background-image: url(../media/img3.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-4{
     grid-area: img-4;
     background-image: url(../media/img4.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-5{
     grid-area: img-5;
     background-image: url(../media/img5.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-6{
     grid-area: img-6;
     background-image: url(../media/img6.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-7{
     grid-area: img-7;
     background-image: url(../media/img7.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-8{
     grid-area: img-8;
     min-height: 81.5em;
     background-image: url(../media/img8.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-9{
     grid-area: img-9;
     background-image: url(../media/img9.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-10{
     grid-area: img-10;
     background-image: url(../media/img10.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-11{
     grid-area: img-11;
     background-image: url(../media/img11.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 .img-12{
     grid-area: img-12;
     min-height: 81.5em;
     background-image: url(../media/img12.jpg);
-    cursor: pointer;
+    @include portfoliotxt;
 }
 @media all and (max-width: 768px){
     .portfolio__title{
         font-size: 45px;
     }
-    .portfolio__container__gallery{
+    .portfolio__gallery{
         grid-template-areas: 
         "img-1 img-2 img-3 img-3"
         "img-4 img-4 img-3 img-3"
@@ -153,7 +226,7 @@
         "img-8 img-8 img-12 img-12"
         "img-11 img-11 img-12 img-12";
     }
-    .portfolio__container__gallery div{
+    .portfolio__gallery div{
         height: 20em;
     }
     .img-3{
@@ -167,7 +240,7 @@
     }
 }
 @media all and (max-width: 576px){
-    .portfolio__container__gallery{
+    .portfolio__gallery{
         grid-template-areas: 
             "img-1 img-1 img-1 img-1"
             "img-2 img-2 img-2 img-2"
@@ -182,10 +255,17 @@
             "img-11 img-11 img-11 img-11"
             "img-12 img-12 img-12 img-12";
     }
-    .portfolio__container__gallery div,
+    .portfolio__gallery div,
     .img-1,
     .img-6{
         min-height: 25em;
         height: 25em;
     }
 }
+
+
+/**************************************/
+/**************************************/
+/**************************************/
+/**************************************/
+

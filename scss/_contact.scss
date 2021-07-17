@@ -21,8 +21,8 @@
 @mixin color{
     color: white;
 }
-@each $w, $n in $font-weights{
-    .font-weights-#{$w}{
+@each $w, $n in $Fweight2{
+    .Fweight2-#{$w}{
         font-weight: $n;
     }
 }

@@ -1,6 +1,7 @@
 /*contact stuff*/
+/* $Fweight2 is for weights for my second font Lato*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -661,6 +662,11 @@ body ul a {
   border: 1px solid white;
 }
 
+.portfolio__gallery div:hover p,
+.portfolio__gallery div:hover::before {
+  opacity: .9;
+}
+
 .portfolio {
   font-family: "Lato", sans-serif;
   font-size: 10px;
@@ -675,13 +681,6 @@ body ul a {
           flex-direction: column;
 }
 
-.portfolio__title {
-  font-size: 55px;
-  margin-left: 54px;
-  margin-top: 65px;
-  margin-bottom: 65px;
-}
-
 .portfolio__container {
   font-size: 10px;
   width: 94%;
@@ -690,7 +689,12 @@ body ul a {
   margin-bottom: 165px;
 }
 
-.portfolio__container__gallery {
+.portfolio__title {
+  font-size: 55px;
+  margin: 65px 0px 65px 54px;
+}
+
+.portfolio__gallery {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -701,7 +705,7 @@ body ul a {
       grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
 }
 
-.portfolio__container__gallery div {
+.portfolio__gallery div {
   width: 100%;
   height: 40em;
   background-position: center;
@@ -714,12 +718,12 @@ body ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
-.portfolio__container__gallery div p {
+.portfolio__gallery div p {
   position: relative;
   z-index: 99;
   padding: 1em 3em;
@@ -729,7 +733,7 @@ body ul a {
   color: white;
 }
 
-.portfolio__container__gallery div::before {
+.portfolio__gallery div::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -742,24 +746,108 @@ body ul a {
   transition: opacity .5s;
 }
 
-.portfolio__container__gallery__title {
+.portfolio__work-title {
   font-size: 18px;
+  margin-bottom: -10px;
 }
 
-.portfolio__container__gallery__txt {
+.portfolio__work-desc {
   font-size: 14px;
+  margin-bottom: 11px;
 }
 
-.portcontainer {
+.portfolio {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.portfolio__container__gallery div:hover p,
-.portfolio__container__gallery div:hover::before {
-  opacity: 1;
+.portfolio__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+  width: 100%;
+  /**max-width: 160em;**/
+  margin: auto;
+  padding: 0 4.5em;
+  margin-bottom: 165px;
+}
+
+.portfolio__title {
+  font-size: 55px;
+  margin: 65px 0px 65px 54px;
+}
+
+.portfolio__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 1.5em;
+      grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
+}
+
+.portfolio__gallery div {
+  width: 100%;
+  height: 40em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.portfolio__gallery div p {
+  position: relative;
+  z-index: 99;
+  padding: 1em 1em;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  color: white;
+}
+
+.portfolio__gallery div::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.portfolio__work-title {
+  font-size: 18px;
+  margin-bottom: -10px;
+}
+
+.portfolio__work-desc {
+  font-size: 14px;
+  margin-bottom: 11px;
 }
 
 .img-1 {
@@ -768,6 +856,10 @@ body ul a {
   grid-area: img-1;
   background-image: url(../media/img1.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-2 {
@@ -776,6 +868,10 @@ body ul a {
   grid-area: img-2;
   background-image: url(../media/img2.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-3 {
@@ -787,6 +883,10 @@ body ul a {
   min-height: 81.5em;
   background-image: url(../media/img3.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-4 {
@@ -796,6 +896,10 @@ body ul a {
   grid-area: img-4;
   background-image: url(../media/img4.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-5 {
@@ -805,6 +909,10 @@ body ul a {
   grid-area: img-5;
   background-image: url(../media/img5.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-6 {
@@ -813,6 +921,10 @@ body ul a {
   grid-area: img-6;
   background-image: url(../media/img6.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-7 {
@@ -821,6 +933,10 @@ body ul a {
   grid-area: img-7;
   background-image: url(../media/img7.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-8 {
@@ -832,6 +948,10 @@ body ul a {
   min-height: 81.5em;
   background-image: url(../media/img8.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-9 {
@@ -840,6 +960,10 @@ body ul a {
   grid-area: img-9;
   background-image: url(../media/img9.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-10 {
@@ -848,6 +972,10 @@ body ul a {
   grid-area: img-10;
   background-image: url(../media/img10.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-11 {
@@ -857,6 +985,10 @@ body ul a {
   grid-area: img-11;
   background-image: url(../media/img11.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .img-12 {
@@ -868,16 +1000,20 @@ body ul a {
   min-height: 81.5em;
   background-image: url(../media/img12.jpg);
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media all and (max-width: 768px) {
   .portfolio__title {
     font-size: 45px;
   }
-  .portfolio__container__gallery {
+  .portfolio__gallery {
         grid-template-areas: "img-1 img-2 img-3 img-3" "img-4 img-4 img-3 img-3" "img-5 img-5 img-6 img-7" "img-8 img-8 img-9 img-10" "img-8 img-8 img-12 img-12" "img-11 img-11 img-12 img-12";
   }
-  .portfolio__container__gallery div {
+  .portfolio__gallery div {
     height: 20em;
   }
   .img-3 {
@@ -892,10 +1028,10 @@ body ul a {
 }
 
 @media all and (max-width: 576px) {
-  .portfolio__container__gallery {
+  .portfolio__gallery {
         grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12";
   }
-  .portfolio__container__gallery div,
+  .portfolio__gallery div,
   .img-1,
   .img-6 {
     min-height: 25em;
@@ -903,6 +1039,10 @@ body ul a {
   }
 }
 
+/**************************************/
+/**************************************/
+/**************************************/
+/**************************************/
 .clients {
   font-family: "Lato", sans-serif;
   margin: 270px 3.12rem;
@@ -977,16 +1117,24 @@ body ul a {
 
 /***Intro contact end***/
 /***contact start***/
-.font-weights-light {
+.Fweight2-thin {
+  font-weight: 100;
+}
+
+.Fweight2-light {
   font-weight: 300;
 }
 
-.font-weights-medium {
-  font-weight: 500;
+.Fweight2-medium {
+  font-weight: 400;
 }
 
-.font-weights-bold {
+.Fweight2-bold {
   font-weight: 700;
+}
+
+.Fweight2-black {
+  font-weight: 900;
 }
 
 .contact {
