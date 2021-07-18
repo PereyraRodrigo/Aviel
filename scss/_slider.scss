@@ -34,7 +34,7 @@
     -o-background-size: cover;
     background-size: cover;
     animation-name: swipe;
-    animation-duration: 15s; /* 5 * number of slides. */
+    animation-duration: 20s; /* 5 * number of slides. */
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1, 0, 0, 1);
     z-index: 1;
@@ -54,26 +54,37 @@ swipe {  0% {
     z-index: 0;
     width: 100%;
 }
-65.9% { /* (Numer of slides * 10) + 36 - 0.1. */
+75.9% { /* (Numer of slides * 10) + 36 - 0.1. */
     z-index: 0;
     visibility: hidden;
 }
-66% { /* (Numer of slides * 10) + 36. */
+/* 65.9% { /* (Numer of slides * 10) + 36 - 0.1. */
+    /* z-index: 0;
+    visibility: hidden;
+} */
+/* 66% { /* (Numer of slides * 10) + 36. */
+    /* visibility: visible;
+} */ 
+76% { /* (Numer of slides * 10) + 36. */
     visibility: visible;
 }
 }
 
 .slide-1 {
-    background: url(../media/slider3.jpg) no-repeat center center;
-    animation-delay: 15s;
+    background: url(../media/slide1.jpg) no-repeat center center;
+    animation-delay: 5s;
 }
 
 .slide-2 {
-    background: url(../media/slider2.jpg) no-repeat center center;
+    background: url(../media/slide2.jpg) no-repeat center center;
     animation-delay: 10s;
 }
 
 .slide-3 {
-    background: url(../media/slider1.jpg) no-repeat center center;
-    animation-delay: 5s;
+    background: url(../media/slide3.jpg) no-repeat center center;
+    animation-delay: 15s;
+}
+.slide-4 {
+    background: url(../media/slide4.jpg) no-repeat center center;
+    animation-delay: 20s;
 }
