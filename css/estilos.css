@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  background-color: black;
+  /* background-color: black; */
 }
 
 body ul {
@@ -47,8 +47,8 @@ body ul a {
   display: flex;
   height: 0.2rem;
   width: 94%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  background-color: black;
 }
 
 .bold {
@@ -59,13 +59,8 @@ body ul a {
   text-align: center;
 }
 
-.right {
-  text-align: right;
-}
-
 .title {
   font-size: 2.5rem;
-  font-weight: bold;
 }
 
 .semiTitle {
@@ -591,6 +586,7 @@ body ul a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: black;
 }
 
 .body__phrase {
@@ -641,24 +637,28 @@ body ul a {
 }
 
 /***main end***/
-.servicios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1em;
-  width: 70%;
+.services {
+  /* font-family: $Font2;
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em;
+	width: 70%;
+	margin: auto;
+    padding-bottom: 15em; */
+  font-family: "Lato", sans-serif;
+  width: 80%;
   margin: auto;
-  color: white;
-  padding-bottom: 15em;
+  margin-top: 135px;
 }
 
-.servicios__cajas {
+.services__title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 95px;
+}
+
+.services__boxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,16 +667,60 @@ body ul a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.servicios__cajas article {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 1rem;
-  margin-top: 20px;
-  border: 1px solid white;
+.services__boxes div {
+  width: 22%;
+  padding: 10px 55px 85px 55px;
+}
+
+.services__icons {
+  width: 95px;
+  fill: white;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services__txt-title {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.services__txt-desc {
+  font-family: "Quicksand", sans-serif;
+  font-size: 17px;
+}
+
+@media all and (max-width: 1200px) {
+  .services__boxes div {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .services {
+    width: 100%;
+  }
+  .services__boxes div {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .services__boxes div {
+    width: 100%;
+  }
 }
 
 .portfolio__gallery div:hover p,
@@ -976,7 +1020,8 @@ body ul a {
 
 .clients {
   font-family: "Lato", sans-serif;
-  margin: 270px 3.12rem;
+  padding: 270px 3.12rem;
+  background-color: black;
 }
 
 .clients__title {

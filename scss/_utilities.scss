@@ -11,8 +11,8 @@
     display: flex;
     height: 0.2rem;
     width: 94%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+	background-color: black;
 }
 .bold{
 	font-weight: bold;
@@ -20,12 +20,8 @@
 .center{
 	text-align: center;
 }
-.right{
-	text-align: right;
-}
 .title{
 	font-size: 2.5rem;
-	font-weight: bold;
 }
 .semiTitle{
 	font-size: 1.25rem;

@@ -1,22 +1,66 @@
-.servicios{
+.services{
+    /* font-family: $Font2;
 	display: flex;
 	flex-wrap: wrap;
     flex-direction: column;
     padding: 1em;
 	width: 70%;
 	margin: auto;
-    color: white;
-    padding-bottom: 15em;
-    &__cajas{
+    padding-bottom: 15em; */
+    font-family: $Font2;
+    width: 80%;
+    margin: auto;
+    margin-top: 135px;
+    &__title{
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 95px;
+    }
+    &__boxes{
         display: flex;
         flex-wrap: wrap;
         flex: 1;
-        margin-top: 20px;
-        article{
-            flex: 1;
-            padding: 1rem;
-            margin-top: 20px;
-            border: 1px solid white;
+        justify-content: center;
+        div{
+            width: 22%;
+            padding: 10px 55px 85px 55px;
         }
-    }    
+    }
+    &__icons{
+        width: 95px;
+        fill: white;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+    &__txt-title{
+        font-family: $Font1;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+    &__txt-desc{
+        font-family: $Font1;
+        font-size: 17px;
+    }            
+}
+@media all and (max-width: 1200px){
+    .services__boxes div{
+        width: 30%;
+    }
+}
+@media all and (max-width: 768px){
+    .services{
+        width: 100%;    
+        &__boxes div{
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 576px){
+    .services__boxes div{
+        width: 100%;
+    }
 }
