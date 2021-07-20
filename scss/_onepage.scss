@@ -1,3 +1,114 @@
+.agency{
+    color: white;
+    background-color: black;
+    font-family: $Font3;
+    /* min-height: 1140px; */    
+    &__blck-txt{
+        width: 89%;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            div{
+                width: 100%;
+            }
+        }
+    }
+    &__phrase{
+        font-size: 80px;
+        color: #fde101;
+        padding-bottom: 40px;
+        padding-top: 160px;
+    }
+    &__txt{
+        font-size: 20px;
+        padding-bottom: 90px;
+        padding-top: 200px;
+    }
+    &__phrase2{
+        font-size: 80px;
+        color: #fde101;
+        padding-top: 250px;
+        padding-bottom: 180px;
+        width: 92%;
+        margin: auto;
+    }
+    &__logo{
+        display: flex;
+        height: 600px;
+        width: auto;        
+        margin-right: 50px;
+        margin: 40px -40px 0px 0px;
+    }
+
+}
+@media all and (max-width: 1200px){
+    .agency{
+        color: white;        
+        &__blck-txt {
+            div{
+                width: 45%;
+            }
+        }
+        &__phrase{
+            font-size: 60px;
+        }
+        &__txt{
+            font-size: 17px;
+            padding-top: 40px;
+        }
+        &__logo{
+            height: 400px;
+            margin: 100px 0px 0px 0px;
+        }
+        &__phrase2{
+            font-size: 60px;
+            padding-top: 0px;
+            padding-bottom: 90px;
+            padding-top: -179px;
+        }
+    }
+}
+
+
+
+@media all and (max-width: 768px){
+    .agency{
+        &__blck-txt{
+            div{
+                width: 80%;
+                margin: auto;
+            }
+        }
+        &__logo{
+            margin: auto;
+        }
+        &__txt{
+            padding-top: 20px;
+        }
+        &__phrase2{
+            text-align: center;
+            margin-top: 95px;
+        }
+    }
+    /* .body__phrase{
+        font-size: 35px;
+    }
+    .body__txt{
+        font-size: 24px;
+    }
+    .body__phrase2{
+        font-size: 35px;
+    }
+    .body {        
+        min-height: 630px;        
+    } */
+}
+/***main end***/
 .footer{
     display: flex;
     justify-content: space-evenly;
@@ -16,53 +127,3 @@
         }
     }
 }
-/***main start***/
-.body{
-    font-family: $Font2;
-	font-size: 1.125rem;
-	min-height: 1080px;
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: column;
-    background-color: black;
-    &__phrase{
-        display: flex;
-        font-size: 5.9375rem;
-        align-self: flex-start;
-        padding-top: 1.875rem;
-        margin-left: 3.125rem;
-        color: $FontColor1;
-    }    
-    &__phrase2{
-        display: flex;
-        font-size: 2.125rem;
-        margin-left: 3.625rem;
-        color: $FontColor1;
-    }
-    &__txt{
-        display: flex;
-        font-size: 2.1875rem;
-        margin-right: 3.5rem;
-        text-align: right;
-        margin-left: 3.0625rem;
-        color: $FontColor1;
-    }
-}
-
-@media all and (max-width: 768px){
-    .body__phrase{
-        font-size: 35px;
-    }
-    .body__txt{
-        font-size: 24px;
-    }
-    .body__phrase2{
-        font-size: 35px;
-    }
-    .body {        
-        min-height: 630px;        
-    }
-}
-/***main end***/
-
-

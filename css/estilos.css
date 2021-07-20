@@ -2,6 +2,7 @@
 /* $Fweight2 is for weights for my second font Lato*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -405,7 +406,7 @@ body ul a {
 
 .affix {
   padding: 0;
-  background-color: #ef0c75;
+  background-color: #fde101;
 }
 
 /* .carousel-control-prev-icon {
@@ -541,6 +542,129 @@ body ul a {
           animation-delay: 20s;
 }
 
+.agency {
+  color: white;
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  /* min-height: 1140px; */
+}
+
+.agency__blck-txt {
+  width: 89%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.agency__blck-txt div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.agency__blck-txt div div {
+  width: 100%;
+}
+
+.agency__phrase {
+  font-size: 80px;
+  color: #fde101;
+  padding-bottom: 40px;
+  padding-top: 160px;
+}
+
+.agency__txt {
+  font-size: 20px;
+  padding-bottom: 90px;
+  padding-top: 200px;
+}
+
+.agency__phrase2 {
+  font-size: 80px;
+  color: #fde101;
+  padding-top: 250px;
+  padding-bottom: 180px;
+  width: 92%;
+  margin: auto;
+}
+
+.agency__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  width: auto;
+  margin-right: 50px;
+  margin: 40px -40px 0px 0px;
+}
+
+@media all and (max-width: 1200px) {
+  .agency {
+    color: white;
+  }
+  .agency__blck-txt div {
+    width: 45%;
+  }
+  .agency__phrase {
+    font-size: 60px;
+  }
+  .agency__txt {
+    font-size: 17px;
+    padding-top: 40px;
+  }
+  .agency__logo {
+    height: 400px;
+    margin: 100px 0px 0px 0px;
+  }
+  .agency__phrase2 {
+    font-size: 60px;
+    padding-top: 0px;
+    padding-bottom: 90px;
+    padding-top: -179px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .agency__blck-txt div {
+    width: 80%;
+    margin: auto;
+  }
+  .agency__logo {
+    margin: auto;
+  }
+  .agency__txt {
+    padding-top: 20px;
+  }
+  .agency__phrase2 {
+    text-align: center;
+    margin-top: 95px;
+  }
+  /* .body__phrase{
+        font-size: 35px;
+    }
+    .body__txt{
+        font-size: 24px;
+    }
+    .body__phrase2{
+        font-size: 35px;
+    }
+    .body {        
+        min-height: 630px;        
+    } */
+}
+
+/***main end***/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,72 +695,6 @@ body ul a {
   width: 1.75rem;
 }
 
-/***main start***/
-.body {
-  font-family: "Lato", sans-serif;
-  font-size: 1.125rem;
-  min-height: 1080px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: black;
-}
-
-.body__phrase {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 5.9375rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding-top: 1.875rem;
-  margin-left: 3.125rem;
-  color: white;
-}
-
-.body__phrase2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 2.125rem;
-  margin-left: 3.625rem;
-  color: white;
-}
-
-.body__txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 2.1875rem;
-  margin-right: 3.5rem;
-  text-align: right;
-  margin-left: 3.0625rem;
-  color: white;
-}
-
-@media all and (max-width: 768px) {
-  .body__phrase {
-    font-size: 35px;
-  }
-  .body__txt {
-    font-size: 24px;
-  }
-  .body__phrase2 {
-    font-size: 35px;
-  }
-  .body {
-    min-height: 630px;
-  }
-}
-
-/***main end***/
 .services {
   /* font-family: $Font2;
 	display: flex;
@@ -1064,7 +1122,7 @@ body ul a {
 
 @media all and (max-width: 768px) {
   .clients {
-    margin: 100px 3.12rem;
+    padding: 100px 3.12rem;
   }
   .clients__title {
     font-size: 33px;
