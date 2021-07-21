@@ -1210,6 +1210,15 @@ body ul a {
 }
 
 @media all and (max-width: 576px) {
+  .clients {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .clients__txt {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 45px;
+  }
   .clients__brands {
     width: 95%;
   }

@@ -52,6 +52,13 @@
 
 @media all and (max-width: 576px){
     .clients{
+        padding: 100px 20px;
+        text-align: center; 
+        &__txt{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 45px;
+        }
         &__brands{
             width: 95%;
             img{
