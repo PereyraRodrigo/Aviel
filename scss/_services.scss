@@ -1,12 +1,4 @@
-.services{
-    /* font-family: $Font2;
-	display: flex;
-	flex-wrap: wrap;
-    flex-direction: column;
-    padding: 1em;
-	width: 70%;
-	margin: auto;
-    padding-bottom: 15em; */
+.services{    
     font-family: $Font2;
     width: 80%;
     margin: auto;
@@ -47,6 +39,7 @@
     &__txt-desc{
         font-family: $Font1;
         font-size: 17px;
+        text-align: center;
     }            
 }
 @media all and (max-width: 1200px){

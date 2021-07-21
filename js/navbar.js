@@ -1,8 +1,8 @@
 $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
-        $('.nav1').addClass('affix');
+        $('.navbar').addClass('navbar__animation');
         console.log("OK");
     } else {
-        $('.nav1').removeClass('affix');
+        $('.navbar').removeClass('navbar__animation');
     }
 });    

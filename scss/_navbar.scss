@@ -1,8 +1,4 @@
-/* Navbar section */
-.header__logo{
-    width: 140px;
-}
-.nav1 {
+.navbar {
     width: 100%;
     height: 73px;
     position: fixed;
@@ -13,112 +9,102 @@
     padding-bottom: 1.25rem;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    &__aviel{
+        width: 140px;
+    }
+    div.navbar__logo {
+        float: left;
+        width: auto;
+        height: auto;
+        padding-left: 1.8125rem;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 2.375rem;
+            &:hover {
+                color: #b900f6;
+            }
+        }
+    }
+    div.navbar__list {
+        height: 4.0625rem;
+        float: right;
+        ul {
+            width: 100%;
+            height: 4.0625rem;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                width: auto;
+                height: 4.0625rem;
+                padding: 0;
+                padding-right: 29px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    line-height: 4.0625rem;
+                    font-size: 1.5rem;
+                    &:hover{
+                        color: #fc48ac;
+                    }
+                }
+            }
+        }
+    }
 }
-
-.nav1 div.logo {
-    float: left;
-    width: auto;
-    height: auto;
-    padding-left: 1.8125rem;
-}
-
-.nav1 div.logo a {
-    text-decoration: none;
-    color: black;
-    font-size: 2.375rem;
-}
-
-.nav1 div.logo a:hover {
-    color: #b900f6;
-}
-
-.nav1 div.main_list {
-    height: 4.0625rem;
-    float: right;
-}
-
-.nav1 div.main_list ul {
-    width: 100%;
-    height: 4.0625rem;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav1 div.main_list ul li {
-    width: auto;
-    height: 4.0625rem;
-    padding: 0;
-    padding-right: 29px;
-}
-
-.nav1 div.main_list ul li a {
-    text-decoration: none;
-    color: black;
-    line-height: 4.0625rem;
-    font-size: 1.5rem;
-}
-
-.nav1 div.main_list ul li a:hover {
-    color: #fde101;
-}
-
-
-/* Home section */
 
 .navTrigger {
     display: none;
 }
 
-/**Media query**/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container1 {
-        margin: 0;
-    }    
-}
+/**Media query stuff**/
 
 @media screen and (max-width:768px) {
     .navTrigger {
         display: block;
     }
-    .nav1 div.logo {
-        margin: auto;
-    }
-    .nav1 div.main_list {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .nav1 div.show_list {
-        height: auto;
-        display: none;
-    }
-    .nav1 div.main_list ul {
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: black;
-        /*same background color of navbar*/
-        background-position: center top;
-    }
-    .nav1 div.main_list ul li {
-        width: 100%;
-        text-align: right;
-    }
-    .nav1 div.main_list ul li a {
-        color: white;
-        text-align: center;
-        width: 100%;
-        font-size: 31px;
-        padding: 20px;
-    }
-    .nav1 div.media_button {
-        display: block;
+    .navbar{
+        div.navbar__logo {
+            margin: auto;
+        }
+        div.navbar__list {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            ul {
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: black;
+                background-position: center top;
+                li {
+                    width: 100%;
+                    text-align: right;
+                    a {
+                        color: white;
+                        text-align: center;
+                        width: 100%;
+                        font-size: 31px;
+                        padding: 20px;
+                        &:hover {
+                            color: #fde101;
+                        }
+                    }
+                }
+            }
+        }
+        div.show_list {
+            height: auto;
+            display: none;
+        }
+        div.media_button {
+            display: block;
+        }
     }
 }
 
@@ -134,54 +120,54 @@
     right: 1.875rem;
     top: 0;
     bottom: 0;
+    i {
+        background-color: black;
+        border-radius: 0.125rem;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0.25rem;
+        &:nth-child(1) {
+            -webkit-animation: outT 0.8s backwards;
+            animation: outT 0.8s backwards;
+            -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+        }
+        &:nth-child(2) {
+            margin: 5px 0;
+            -webkit-animation: outM 0.8s backwards;
+            animation: outM 0.8s backwards;
+            -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+        }
+        &:nth-child(3) {
+            -webkit-animation: outBtm 0.8s backwards;
+            animation: outBtm 0.8s backwards;
+            -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+        }
+    }
+    &.activ3 i{
+        &:nth-child(1) {
+            -webkit-animation: inT 0.8s forwards;
+            animation: inT 0.8s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: inM 0.8s forwards;
+            animation: inM 0.8s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: inBtm 0.8s forwards;
+            animation: inBtm 0.8s forwards;
+        }
+    }
+}
+.navbar__animation {
+    padding: 0;
+    background-color: #fde101;
 }
 
-.navTrigger i {
-    background-color: black;
-    border-radius: 0.125rem;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 0.25rem;
-}
-
-.navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger.activ3 i:nth-child(1) {
-    -webkit-animation: inT 0.8s forwards;
-    animation: inT 0.8s forwards;
-}
-
-.navTrigger.activ3 i:nth-child(2) {
-    -webkit-animation: inM 0.8s forwards;
-    animation: inM 0.8s forwards;
-}
-
-.navTrigger.activ3 i:nth-child(3) {
-    -webkit-animation: inBtm 0.8s forwards;
-    animation: inBtm 0.8s forwards;
-}
-
+///**keyframes**///
 @-webkit-keyframes inM {
     50% {
         -webkit-transform: rotate(0deg);
@@ -312,9 +298,4 @@
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
-}
-
-.affix {
-    padding: 0;
-    background-color: #fde101;
 }

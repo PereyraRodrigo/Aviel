@@ -6,20 +6,19 @@
     <meta name="description" content="Aviel is a design agency that offers full services on Digital design, Brand identity, Advertising, Digital development and Editorial design.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css">    --> 
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Aviel Design Agency</title>
 </head>
 
 <body>
-    <nav class="nav1"><!--Header-->
-        <div class="container1">
-            <div class="logo">
-                <a href="index.html"><img class="header__logo" src="media/logo.png" alt="Aviel logo"></a>
+    <nav class="navbar"><!--Header-->
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <a href="index.html"><img class="navbar__aviel" src="media/logo.png" alt="Aviel logo"></a>
             </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
+            <div id="mainListDiv" class="navbar__list">
+                <ul>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#clients">Clients</a></li>
@@ -175,13 +174,14 @@
         </div>
     </div>
     <div class="separador2"></div>
+    <button onclick="topFunction()" id="button" title="Go to top">Top</button>
     <footer class="footer"><!--Footer-->		
 		<p class="footer__legales">© 2021 Aviel</p>
-		<a class="footer__icons" href="https://dribbble.com/"><img src="media/dribble.png" alt="dribble Icon"></a>
-		<a class="footer__icons" href="https://twitter.com/"><img src="media/twitter.png" alt="twitter Icon"></a>
-		<a class="footer__icons" href="https://www.instagram.com/"><img src="media/instagram.png" alt="instagram Icon"></a>
-		<a class="footer__icons" href="https://ar.linkedin.com/"><img src="media/linkedin.png" alt="linkedin Icon"></a>
-		<a class="footer__icons marR" href="https://www.behance.net/"><img src="media/behance.png" alt="behance Icon"></a>
+		<a class="footer__icons" target="_blank" href="https://dribbble.com/"><img src="media/dribble.svg" alt="Dribble icon"></a>
+		<a class="footer__icons" target="_blank" href="https://twitter.com/"><img src="media/behance.svg" alt="Behance icon"></a>
+		<a class="footer__icons" target="_blank" href="https://www.instagram.com/"><img src="media/instagram.svg" alt="instagram icon"></a>
+		<a class="footer__icons" target="_blank" href="https://ar.linkedin.com/"><img src="media/github.svg" alt="Github icon"></a>
+		<a class="footer__icons marR" target="_blank" href="https://www.behance.net/"><img src="media/linkedin.svg" alt="Linkedin icon"></a>
 	</footer><!--Footer fin-->
 
     
@@ -190,9 +190,8 @@
     <script src="js/navbar.js"></script>
 
     <script src="js/script.js"></script>
-
-    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->    
-    
+  
+    <script src="js/button.js"></script>
     <!--animate & wow-->
     <script src="js/wow.min.js"></script>
     <script src="js/wowinit.js"></script>
