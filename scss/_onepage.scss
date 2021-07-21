@@ -24,16 +24,18 @@
         padding-top: 160px;
     }
     &__txt{
-        font-size: 20px;
+        font-size: 22px;
         padding-top: 200px;
     }
     &__phrase2{
+        font-family: $Font2;
         font-size: 110px;
         color: #fde101;
-        padding-top: 250px;
+        padding-top: 359px;
         padding-bottom: 180px;
         width: 92%;
         margin: auto;
+        text-align: center;
     }
     &__logo{
         display: flex;
@@ -92,18 +94,6 @@
             text-align: center;
         }
     }
-    /* .body__phrase{
-        font-size: 35px;
-    }
-    .body__txt{
-        font-size: 24px;
-    }
-    .body__phrase2{
-        font-size: 35px;
-    }
-    .body {        
-        min-height: 630px;        
-    } */
 }
 /***main end***/
 .footer{

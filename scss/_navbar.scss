@@ -55,7 +55,7 @@
 
 .nav1 div.main_list ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     line-height: 4.0625rem;
     font-size: 1.5rem;
 }
@@ -76,7 +76,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container1 {
         margin: 0;
-    }
+    }    
 }
 
 @media screen and (max-width:768px) {
@@ -111,6 +111,7 @@
         text-align: right;
     }
     .nav1 div.main_list ul li a {
+        color: white;
         text-align: center;
         width: 100%;
         font-size: 31px;

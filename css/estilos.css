@@ -152,7 +152,7 @@ body ul a {
 
 .nav1 div.main_list ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   line-height: 4.0625rem;
   font-size: 1.5rem;
 }
@@ -208,6 +208,7 @@ body ul a {
     text-align: right;
   }
   .nav1 div.main_list ul li a {
+    color: white;
     text-align: center;
     width: 100%;
     font-size: 31px;
@@ -603,17 +604,19 @@ body ul a {
 }
 
 .agency__txt {
-  font-size: 20px;
+  font-size: 22px;
   padding-top: 200px;
 }
 
 .agency__phrase2 {
+  font-family: "Lato", sans-serif;
   font-size: 110px;
   color: #fde101;
-  padding-top: 250px;
+  padding-top: 359px;
   padding-bottom: 180px;
   width: 92%;
   margin: auto;
+  text-align: center;
 }
 
 .agency__logo {
@@ -666,18 +669,6 @@ body ul a {
   .agency__phrase2 {
     text-align: center;
   }
-  /* .body__phrase{
-        font-size: 35px;
-    }
-    .body__txt{
-        font-size: 24px;
-    }
-    .body__phrase2{
-        font-size: 35px;
-    }
-    .body {        
-        min-height: 630px;        
-    } */
 }
 
 /***main end***/
@@ -1166,7 +1157,10 @@ body ul a {
 }
 
 .clients__txt {
-  margin-bottom: 45px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 45px;
 }
 
 .clients__brands {
