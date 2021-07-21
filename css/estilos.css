@@ -3,6 +3,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+.Fweight2-thin {
+  font-weight: 100;
+}
+
+.Fweight2-light {
+  font-weight: 300;
+}
+
+.Fweight2-medium {
+  font-weight: 400;
+}
+
+.Fweight2-bold {
+  font-weight: 700;
+}
+
+.Fweight2-black {
+  font-weight: 900;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -132,13 +152,13 @@ body ul a {
 
 .nav1 div.main_list ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   line-height: 4.0625rem;
   font-size: 1.5rem;
 }
 
 .nav1 div.main_list ul li a:hover {
-  color: #12bcff;
+  color: #fde101;
 }
 
 /* Home section */
@@ -179,7 +199,7 @@ body ul a {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: white;
+    background-color: black;
     /*same background color of navbar*/
     background-position: center top;
   }
@@ -1081,6 +1101,51 @@ body ul a {
   }
 }
 
+.introc {
+  background-color: white;
+  padding: 240px 50px;
+}
+
+.introc__blck {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.introc__title {
+  font-size: 33px;
+  padding-bottom: 50px;
+}
+
+.introc__parag {
+  padding-bottom: 30px;
+}
+
+.introc__button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border-radius: 35px;
+}
+
+@media all and (max-width: 1200px) {
+  .introc__blck {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .introc {
+    padding: 100px 24px;
+  }
+  .introc__blck {
+    width: 95%;
+  }
+  .introc__title {
+    font-size: 26px;
+  }
+}
+
 .clients {
   font-family: "Lato", sans-serif;
   padding: 270px 3.12rem;
@@ -1125,6 +1190,12 @@ body ul a {
   max-width: 163px;
 }
 
+@media all and (max-width: 1200px) {
+  .clients__box {
+    width: 85%;
+  }
+}
+
 @media all and (max-width: 768px) {
   .clients {
     padding: 100px 3.12rem;
@@ -1138,46 +1209,19 @@ body ul a {
   }
 }
 
-/***Intro contact start***/
-.IntroC {
-  background-color: white;
-  padding: 270px 3.12rem;
+@media all and (max-width: 576px) {
+  .clients__brands {
+    width: 95%;
+  }
+  .clients__brands img {
+    max-width: 129px;
+  }
 }
 
-.IntroC__blck {
-  width: 40%;
-  margin: auto;
-  text-align: center;
-}
-
-.IntroC__title {
-  font-size: 33px;
-}
-
-/***Intro contact end***/
 /***contact start***/
-.Fweight2-thin {
-  font-weight: 100;
-}
-
-.Fweight2-light {
-  font-weight: 300;
-}
-
-.Fweight2-medium {
-  font-weight: 400;
-}
-
-.Fweight2-bold {
-  font-weight: 700;
-}
-
-.Fweight2-black {
-  font-weight: 900;
-}
-
 .contact {
-  background-color: #33ca9f;
+  background-color: #fde101;
+  color: black;
 }
 
 .contact__block {
@@ -1194,16 +1238,18 @@ body ul a {
 }
 
 .contact__title {
-  color: white;
-  margin-top: 4.0625rem;
+  margin-top: 125px;
   font-size: 2.5rem;
 }
 
 .contact__txt {
-  color: white;
   width: 30%;
   margin: 1.5625rem auto 5.9375rem auto;
   font-size: 1.875rem;
+}
+
+.formu {
+  color: black;
 }
 
 .formu__block {
@@ -1242,9 +1288,23 @@ body ul a {
 }
 
 .formu__subtitle {
-  color: white;
   font-size: 1.3125rem;
 }
 
 /***contact end***/
+@media all and (max-width: 1200px) {
+  .contact__txt {
+    width: 60%;
+  }
+  .formu__block div {
+    width: 37%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .formu__block div {
+    width: 67%;
+  }
+}
+
 /*@import "mediaquerys";*/

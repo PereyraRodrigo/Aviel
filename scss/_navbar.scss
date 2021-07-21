@@ -55,13 +55,13 @@
 
 .nav1 div.main_list ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     line-height: 4.0625rem;
     font-size: 1.5rem;
 }
 
 .nav1 div.main_list ul li a:hover {
-    color: #12bcff;
+    color: #fde101;
 }
 
 
@@ -102,7 +102,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: white;
+        background-color: black;
         /*same background color of navbar*/
         background-position: center top;
     }

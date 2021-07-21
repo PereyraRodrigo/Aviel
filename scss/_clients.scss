@@ -30,16 +30,33 @@
     }
 
 }
-
+@media all and (max-width: 1200px){
+    .clients{
+        &__box{
+            width: 85%;
+        }
+    }
+}
 @media all and (max-width: 768px){
-    .clients {
+    .clients{
         padding: 100px 3.12rem;
-    }
-    .clients__title {
-        font-size: 33px;
-    }
-    .clients__box{
-        width: auto;
-        font-size: 19px;        
+        &__title{
+            font-size: 33px;
+        }
+        &__box{
+            width: auto;
+            font-size: 19px; 
+        }
+    }    
+}
+
+@media all and (max-width: 576px){
+    .clients{
+        &__brands{
+            width: 95%;
+            img{
+                max-width: 129px;
+            }
+        }
     }
 }

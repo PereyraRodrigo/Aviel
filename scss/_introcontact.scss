@@ -1,0 +1,40 @@
+.introc{
+    background-color: white;
+    padding: 240px 50px;
+    &__blck{
+        width: 40%;
+        margin: auto;
+        text-align: center;
+    }
+    &__title{
+        font-size: 33px;
+        padding-bottom: 50px;
+    }
+    &__parag{
+        padding-bottom: 30px;
+    }
+    &__button{
+        padding: 12px;
+        background-color: black;
+        color: white;
+        border-radius: 35px;
+    }
+}
+@media all and (max-width: 1200px){
+    .introc{
+        &__blck{
+            width: 70%;
+        }
+    }
+}
+@media all and (max-width: 768px){
+    .introc{
+        padding: 100px 24px;
+        &__blck{
+            width: 95%;
+        }
+        &__title{
+            font-size: 26px;
+        }
+    }
+}

@@ -14,3 +14,9 @@ $Fweight2:(
     "bold": 700,
     "black": 900
 );
+
+@each $w, $n in $Fweight2{
+    .Fweight2-#{$w}{
+        font-weight: $n;
+    }
+}
