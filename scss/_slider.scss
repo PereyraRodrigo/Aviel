@@ -1,12 +1,3 @@
-/* .carousel-control-prev-icon {
-    background-image: url("../media/leftarrow.png");
-}
-.carousel-control-next-icon {
-    background-image: url("../media/rightarrow.png");
-}
-.carousel-indicators li {
-    background-color: black;
-} */
 .carousel {
     width: 100%;
     height: 100vh;
@@ -71,8 +62,10 @@ swipe {  0% {
 }
 
 .slide-1 {
-    background: url(../media/slide1.jpg) no-repeat center center;
+    background: url(../media/slide1.jpg) no-repeat center center;    
+    background-position: 100%;
     animation-delay: 5s;
+    background-position: center center;
 }
 
 .slide-2 {
@@ -87,4 +80,10 @@ swipe {  0% {
 .slide-4 {
     background: url(../media/slide4.jpg) no-repeat center center;
     animation-delay: 20s;
+}
+
+@media all and (max-width: 768px){
+    .slide-1{
+        background: url(../media/slide1.768px.jpg) no-repeat center center;
+    }
 }

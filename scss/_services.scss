@@ -32,6 +32,10 @@
         margin: auto;
         justify-content: center;
         display: flex;
+        transition: transform .6s;
+        &:hover{
+            transform: scale(1.3);
+        }
     }
     &__txt-title{
         font-family: $Font1;

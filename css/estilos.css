@@ -409,15 +409,6 @@ body ul a {
   background-color: #fde101;
 }
 
-/* .carousel-control-prev-icon {
-    background-image: url("../media/leftarrow.png");
-}
-.carousel-control-next-icon {
-    background-image: url("../media/rightarrow.png");
-}
-.carousel-indicators li {
-    background-color: black;
-} */
 .carousel {
   width: 100%;
   height: 100vh;
@@ -520,8 +511,10 @@ body ul a {
 
 .slide-1 {
   background: url(../media/slide1.jpg) no-repeat center center;
+  background-position: 100%;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
+  background-position: center center;
 }
 
 .slide-2 {
@@ -540,6 +533,12 @@ body ul a {
   background: url(../media/slide4.jpg) no-repeat center center;
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
+}
+
+@media all and (max-width: 768px) {
+  .slide-1 {
+    background: url(../media/slide1.768px.jpg) no-repeat center center;
+  }
 }
 
 .agency {
@@ -578,20 +577,18 @@ body ul a {
 }
 
 .agency__phrase {
-  font-size: 80px;
+  font-size: 110px;
   color: #fde101;
-  padding-bottom: 40px;
   padding-top: 160px;
 }
 
 .agency__txt {
   font-size: 20px;
-  padding-bottom: 90px;
   padding-top: 200px;
 }
 
 .agency__phrase2 {
-  font-size: 80px;
+  font-size: 110px;
   color: #fde101;
   padding-top: 250px;
   padding-bottom: 180px;
@@ -605,8 +602,7 @@ body ul a {
   display: flex;
   height: 600px;
   width: auto;
-  margin-right: 50px;
-  margin: 40px -40px 0px 0px;
+  margin: 170px 0px 0px 0px;
 }
 
 @media all and (max-width: 1200px) {
@@ -641,14 +637,14 @@ body ul a {
     margin: auto;
   }
   .agency__logo {
-    margin: auto;
+    margin: 70px auto 70px auto;
+    height: 300px;
   }
   .agency__txt {
     padding-top: 20px;
   }
   .agency__phrase2 {
     text-align: center;
-    margin-top: 95px;
   }
   /* .body__phrase{
         font-size: 35px;
@@ -745,6 +741,15 @@ body ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+}
+
+.services__icons:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .services__txt-title {

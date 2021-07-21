@@ -19,18 +19,16 @@
         }
     }
     &__phrase{
-        font-size: 80px;
+        font-size: 110px;
         color: #fde101;
-        padding-bottom: 40px;
         padding-top: 160px;
     }
     &__txt{
         font-size: 20px;
-        padding-bottom: 90px;
         padding-top: 200px;
     }
     &__phrase2{
-        font-size: 80px;
+        font-size: 110px;
         color: #fde101;
         padding-top: 250px;
         padding-bottom: 180px;
@@ -40,9 +38,8 @@
     &__logo{
         display: flex;
         height: 600px;
-        width: auto;        
-        margin-right: 50px;
-        margin: 40px -40px 0px 0px;
+        width: auto;
+        margin: 170px 0px 0px 0px;
     }
 
 }
@@ -85,14 +82,14 @@
             }
         }
         &__logo{
-            margin: auto;
+            margin: 70px auto 70px auto;
+            height: 300px;
         }
         &__txt{
             padding-top: 20px;
         }
         &__phrase2{
             text-align: center;
-            margin-top: 95px;
         }
     }
     /* .body__phrase{
