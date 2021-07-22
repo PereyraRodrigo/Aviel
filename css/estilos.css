@@ -126,7 +126,7 @@ body ul a {
 }
 
 .navbar__aviel {
-  width: 140px;
+  width: 131px;
 }
 
 .navbar div.navbar__logo {
@@ -546,10 +546,8 @@ body ul a {
 
 .slide-1 {
   background: url(../media/slide1.jpg) no-repeat center center;
-  background-position: 100%;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
-  background-position: center center;
 }
 
 .slide-2 {
@@ -572,13 +570,28 @@ body ul a {
 
 @media all and (max-width: 768px) {
   .slide-1 {
-    background: url(../media/slide1.768px.jpg) no-repeat center center;
+    background: url(../media/mobile_slider/1-768px.jpg) no-repeat center center;
+  }
+  .slide-2 {
+    background: url(../media/mobile_slider/2-768px.jpg) no-repeat center center;
+  }
+  .slide-3 {
+    background: url(../media/mobile_slider/3-768px.jpg) no-repeat center center;
+  }
+  .slide-4 {
+    background: url(../media/mobile_slider/4-768px.jpg) no-repeat center center;
   }
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 380px) {
   .slide-1 {
-    background: url(../media/slide1.341px.jpg);
+    background: url(../media/mobile_slider/1-380px.jpg) no-repeat center center;
+  }
+  .slide-3 {
+    background: url(../media/mobile_slider/3-380px.jpg) no-repeat center center;
+  }
+  .slide-4 {
+    background: url(../media/mobile_slider/4-380px.jpg) no-repeat center center;
   }
 }
 
