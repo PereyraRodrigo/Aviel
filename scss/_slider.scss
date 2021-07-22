@@ -87,3 +87,9 @@ swipe {  0% {
         background: url(../media/slide1.768px.jpg) no-repeat center center;
     }
 }
+
+@media all and (max-width: 450px){
+    .slide-1{
+        background: url(../media/slide1.341px.jpg);
+    }
+}

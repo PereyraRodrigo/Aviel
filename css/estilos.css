@@ -576,6 +576,12 @@ body ul a {
   }
 }
 
+@media all and (max-width: 450px) {
+  .slide-1 {
+    background: url(../media/slide1.341px.jpg);
+  }
+}
+
 .agency {
   color: white;
   background-color: black;
