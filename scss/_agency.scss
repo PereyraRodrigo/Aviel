@@ -23,10 +23,10 @@
         font-size: 110px;
         color: #fde101;
         padding-top: 160px;
+        padding-bottom: 160px;
     }
     &__txt{
         font-size: 22px;
-        padding-top: 200px;
     }
     &__phrase2{
         font-family: $Font2;
@@ -38,35 +38,41 @@
         margin: auto;
         text-align: center;
     }
-    &__logo{
+    /* &__logo{
         display: flex;
         height: 600px;
         width: auto;
         margin: 170px 0px 0px 0px;
+    } */
+    &__logo{
+        width: 48%;
+        max-width: 650px;
+        height: auto;
+        margin-top: 130px;
     }
-
 }
 @media all and (max-width: 1200px){
     .agency{
         color: white;        
-        &__blck-txt {
+        /* &__blck-txt {
             div{
                 width: 45%;
             }
-        }
+        } */
         &__phrase{
-            font-size: 60px;
+            font-size: 90px;
         }
         &__txt{
             font-size: 17px;
             padding-top: 40px;
+            padding-bottom: 160px;
         }
-        &__logo{
+        /* &__logo{
             height: 400px;
             margin: 100px 0px 0px 0px;
-        }
+        } */
         &__phrase2{
-            font-size: 60px;
+            font-size: 90px;
             padding-top: 0px;
             padding-bottom: 90px;
             padding-top: -179px;
@@ -85,13 +91,25 @@
             }
         }
         &__logo{
+            margin: auto;
+            width: 88%;
+        }
+        /* &__logo{
             margin: 70px auto 70px auto;
             height: 300px;
-        }
+        } */
         &__txt{
             padding-top: 20px;
+            padding-bottom: 90px;
+        }
+        &__phrase{
+            padding-top: 100px;
+            padding-bottom: 80px;
+            font-size: 60px;
         }
         &__phrase2{
+            font-size: 60px;
+            padding-top: 90px;
             text-align: center;
         }
     }

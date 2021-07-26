@@ -68,6 +68,11 @@
     .navbar{
         div.navbar__logo {
             margin: auto;
+            padding-top: 11px;
+            padding-left: 18px;
+            a{
+                font-size: 16px;
+            }
         }
         div.navbar__list {
             width: 100%;
