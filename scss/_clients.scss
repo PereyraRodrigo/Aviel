@@ -20,15 +20,20 @@
         padding-bottom: 45px;
     }
     &__brands{
-        cursor: pointer;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 80%;
         margin: auto;
-        align-items: first baseline;
+        align-items: center;
         img{
             max-width: 163px;
+            transition: transform .6s;
+            filter: grayscale(100%);            
+            &:hover{
+            transform: scale(1.2);
+            filter: grayscale(0%);            
+            }
         }        
     }
 }

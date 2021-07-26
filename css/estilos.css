@@ -905,7 +905,6 @@ body ul a {
   -ms-grid-column: 1;
   grid-area: img-1;
   background-image: url(../media/img1.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -917,7 +916,6 @@ body ul a {
   -ms-grid-column: 2;
   grid-area: img-2;
   background-image: url(../media/img2.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -932,7 +930,6 @@ body ul a {
   grid-area: img-3;
   min-height: 81.5em;
   background-image: url(../media/img3.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -945,7 +942,6 @@ body ul a {
   -ms-grid-column-span: 2;
   grid-area: img-4;
   background-image: url(../media/img4.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -958,7 +954,6 @@ body ul a {
   -ms-grid-column-span: 2;
   grid-area: img-5;
   background-image: url(../media/img5.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -970,7 +965,6 @@ body ul a {
   -ms-grid-column: 3;
   grid-area: img-6;
   background-image: url(../media/img6.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -982,7 +976,6 @@ body ul a {
   -ms-grid-column: 4;
   grid-area: img-7;
   background-image: url(../media/img7.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -997,7 +990,6 @@ body ul a {
   grid-area: img-8;
   min-height: 81.5em;
   background-image: url(../media/img8.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1009,7 +1001,6 @@ body ul a {
   -ms-grid-column: 3;
   grid-area: img-9;
   background-image: url(../media/img9.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1021,7 +1012,6 @@ body ul a {
   -ms-grid-column: 4;
   grid-area: img-10;
   background-image: url(../media/img10.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1034,7 +1024,6 @@ body ul a {
   -ms-grid-column-span: 2;
   grid-area: img-11;
   background-image: url(../media/img11.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1049,7 +1038,6 @@ body ul a {
   grid-area: img-12;
   min-height: 81.5em;
   background-image: url(../media/img12.jpg);
-  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1161,7 +1149,6 @@ body ul a {
 }
 
 .clients__brands {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,13 +1159,26 @@ body ul a {
           justify-content: space-evenly;
   width: 80%;
   margin: auto;
-  -webkit-box-align: first baseline;
-      -ms-flex-align: first baseline;
-          align-items: first baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .clients__brands img {
   max-width: 163px;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.clients__brands img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 @media all and (max-width: 1200px) {
