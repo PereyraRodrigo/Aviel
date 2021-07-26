@@ -45,7 +45,7 @@
         margin: 170px 0px 0px 0px;
     } */
     &__logo{
-        width: 48%;
+        width: 88%;
         max-width: 650px;
         margin-top: 130px;
     }
@@ -90,8 +90,7 @@
             }
         }
         &__logo{
-            margin: 0px auto;
-            width: 81%;
+            margin: auto;            
         }
         /* &__logo{
             margin: 70px auto 70px auto;
@@ -115,11 +114,11 @@
         }
     }
 }
-@media all and (max-width: 380px){
+/* @media all and (max-width: 380px){
     .agency__logo {
         margin: 0px auto;
         width: 81%;
         height: 250px;
     }
 }
-/***main end***/
+/***m */ain end***/
