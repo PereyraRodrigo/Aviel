@@ -86,13 +86,14 @@
         &__blck-txt{
             div{
                 width: 80%;
-                margin: auto;
+                margin: 0px auto;
             }
         }
         &__logo{
             margin:0px auto;
             width: 85%;
-            min-width: 210px;            
+            min-width: 210px;
+            max-height: 290px;            
         }
         /* &__logo{
             margin: 70px auto 70px auto;

@@ -708,12 +708,13 @@ body ul a {
   }
   .agency__blck-txt div {
     width: 80%;
-    margin: auto;
+    margin: 0px auto;
   }
   .agency__logo {
     margin: 0px auto;
     width: 85%;
     min-width: 210px;
+    max-height: 290px;
   }
   .agency__txt {
     padding-top: 20px;
@@ -1097,6 +1098,12 @@ body ul a {
   }
   .img-8 {
     min-height: 41.5em;
+  }
+  .img-4 {
+    background-image: url(../media/img4.768px.jpg);
+  }
+  .img-11 {
+    background-image: url(../media/img11.768px.jpg);
   }
 }
 
