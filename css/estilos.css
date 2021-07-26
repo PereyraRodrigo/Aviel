@@ -711,7 +711,7 @@ body ul a {
     margin: auto;
   }
   .agency__logo {
-    margin: auto;
+    margin: 0px auto;
   }
   .agency__txt {
     padding-top: 20px;
