@@ -47,7 +47,6 @@
     &__logo{
         width: 48%;
         max-width: 650px;
-        height: auto;
         margin-top: 130px;
     }
 }
@@ -91,8 +90,8 @@
             }
         }
         &__logo{
-            margin: auto;
-            width: 88%;
+            margin: 0px auto;
+            width: 81%;
         }
         /* &__logo{
             margin: 70px auto 70px auto;
@@ -111,6 +110,8 @@
             font-size: 60px;
             padding-top: 90px;
             text-align: center;
+            width: 88%;
+            margin: auto;
         }
     }
 }

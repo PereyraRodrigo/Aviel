@@ -667,7 +667,6 @@ body ul a {
 .agency__logo {
   width: 48%;
   max-width: 650px;
-  height: auto;
   margin-top: 130px;
 }
 
@@ -712,8 +711,8 @@ body ul a {
     margin: auto;
   }
   .agency__logo {
-    margin: auto;
-    width: 88%;
+    margin: 0px auto;
+    width: 81%;
   }
   .agency__txt {
     padding-top: 20px;
@@ -728,6 +727,8 @@ body ul a {
     font-size: 60px;
     padding-top: 90px;
     text-align: center;
+    width: 88%;
+    margin: auto;
   }
 }
 
