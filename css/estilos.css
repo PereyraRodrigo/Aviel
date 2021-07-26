@@ -665,7 +665,7 @@ body ul a {
 }
 
 .agency__logo {
-  width: 48%;
+  width: 49%;
   max-width: 650px;
   margin-top: 130px;
 }
@@ -711,8 +711,7 @@ body ul a {
     margin: auto;
   }
   .agency__logo {
-    margin: 0px auto;
-    width: 81%;
+    margin: auto;
   }
   .agency__txt {
     padding-top: 20px;
@@ -732,14 +731,13 @@ body ul a {
   }
 }
 
-@media all and (max-width: 380px) {
-  .agency__logo {
-    margin: 0px auto;
-    width: 81%;
-    height: 250px;
-  }
+/* @media all and (max-width: 380px){
+    .agency__logo {
+        margin: 0px auto;
+        width: 81%;
+        height: 250px;
+    }
 }
-
 /***main end***/
 .services {
   font-family: "Lato", sans-serif;
