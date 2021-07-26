@@ -31,7 +31,15 @@
 }
 #button:hover {
 	background-color: #555;
-  }
+}
+@media all and (max-width: 768px){
+	#button{
+		bottom: 14px;
+		right: 14px;
+		padding: 10px;
+	}
+	
+}
 .bold{
 	font-weight: bold;
 }
