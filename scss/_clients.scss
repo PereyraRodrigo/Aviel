@@ -2,13 +2,12 @@
     font-family: $Font2;
     padding: 270px 3.12rem;
     background-color: black;
+    color: $fontcolor1;
     &__title{
-        color: $FontClients;
-        font-size: 43px;
+        font-size: 50px;
         margin-bottom: 55px;
     }
     &__box{
-        color: $FontClients;
         width: 45%;
         margin: auto;
         font-size: 24px;

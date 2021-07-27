@@ -21,29 +21,24 @@
     }
     &__phrase{
         font-size: 110px;
-        color: #fde101;
+        color: $fontcolor2;
         padding-top: 160px;
         padding-bottom: 160px;
     }
     &__txt{
         font-size: 22px;
+        color: $fontcolor1;
     }
     &__phrase2{
         font-family: $Font2;
         font-size: 110px;
-        color: #fde101;
+        color: $fontcolor2;
         padding-top: 359px;
         padding-bottom: 180px;
         width: 92%;
         margin: auto;
         text-align: center;
-    }
-    /* &__logo{
-        display: flex;
-        height: 600px;
-        width: auto;
-        margin: 170px 0px 0px 0px;
-    } */
+    }    
     &__logo{
         width: 49%;
         max-width: 650px;
@@ -52,29 +47,18 @@
 }
 @media all and (max-width: 1200px){
     .agency{
-        color: white;        
-        /* &__blck-txt {
-            div{
-                width: 45%;
-            }
-        } */
+        color: white;
         &__phrase{
             font-size: 90px;
         }
         &__txt{
             font-size: 17px;
-            padding-top: 40px;
-            padding-bottom: 160px;
-        }
-        /* &__logo{
-            height: 400px;
-            margin: 100px 0px 0px 0px;
-        } */
+            padding-bottom: 70px;
+        }        
         &__phrase2{
             font-size: 90px;
-            padding-top: 0px;
+            padding-top: 60px;
             padding-bottom: 90px;
-            padding-top: -179px;
         }
     }
 }
@@ -95,13 +79,8 @@
             min-width: 210px;
             max-height: 290px;            
         }
-        /* &__logo{
-            margin: 70px auto 70px auto;
-            height: 300px;
-        } */
         &__txt{
             padding-top: 20px;
-            /* padding-bottom: 90px; */
             padding-bottom: 70px;
         }
         &__phrase{
@@ -111,7 +90,6 @@
         }
         &__phrase2{
             font-size: 60px;
-            /* padding-top: 90px; */
             padding-top: 90px;
             text-align: center;
             width: 88%;
@@ -119,11 +97,3 @@
         }
     }
 }
-/* @media all and (max-width: 380px){
-    .agency__logo {
-        margin: 0px auto;
-        width: 81%;
-        height: 250px;
-    }
-}
-/***main end***/

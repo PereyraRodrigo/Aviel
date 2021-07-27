@@ -1,37 +1,32 @@
-.carousel {
+.slider {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-}
-
-.viewport {
+    &__viewport {
     width: 100%;
     height: 100%;
     position: relative;
     background-color: black;
+    }
+    &__container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        div {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            animation-name: swipe;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(1, 0, 0, 1);
+            z-index: 1;
+            position: absolute;
+            background-color: white;
+        }
+    }
 }
 
-.slide-container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.slide-container > div {
-    width: 100%;
-    height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    animation-name: swipe;
-    animation-duration: 20s; /* 5 * number of slides. */
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1, 0, 0, 1);
-    z-index: 1;
-    position: absolute;
-    background-color: white;
-}
 @keyframes 
 swipe {  0% {
     z-index: 1;
@@ -45,18 +40,11 @@ swipe {  0% {
     z-index: 0;
     width: 100%;
 }
-75.9% { /* (Numer of slides * 10) + 36 - 0.1. */
+75.9% {
     z-index: 0;
     visibility: hidden;
 }
-/* 65.9% { /* (Numer of slides * 10) + 36 - 0.1. */
-    /* z-index: 0;
-    visibility: hidden;
-} */
-/* 66% { /* (Numer of slides * 10) + 36. */
-    /* visibility: visible;
-} */ 
-76% { /* (Numer of slides * 10) + 36. */
+76% {
     visibility: visible;
 }
 }
@@ -94,15 +82,3 @@ swipe {  0% {
         background: url(../media/mobile_slider/4-768px.jpg) no-repeat center center;
     }
 }
-
-/* @media all and (max-width: 380px){
-    .slide-1{
-        background: url(../media/mobile_slider/1-380px.jpg) no-repeat center center;
-    }
-    .slide-3{
-        background: url(../media/mobile_slider/3-380px.jpg) no-repeat center center;
-    }
-    .slide-4{
-        background: url(../media/mobile_slider/4-380px.jpg) no-repeat center center;
-    }
-} */

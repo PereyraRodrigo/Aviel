@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"> 
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
     <title>Aviel Design Agency</title>
 </head>
 
@@ -32,18 +34,18 @@
             </span><!--Hamburger Menu END-->
         </div>
     </nav><!--Header end-->   
-    <div class="carousel">
-        <div class="viewport">
-            <div class="slide-container">
+    <div class="slider">
+        <div class="slider__viewport">
+            <div class="slider__container">
                 <div class="slide-4"></div>
             </div>
-            <div class="slide-container">
+            <div class="slider__container">
                 <div class="slide-3"></div>
             </div>
-            <div class="slide-container">
+            <div class="slider__container">
                 <div class="slide-2"></div>
             </div>
-            <div class="slide-container">
+            <div class="slider__container">
                 <div class="slide-1"></div>
             </div>            
         </div>
@@ -173,7 +175,8 @@
             <a href="DesignAgencyContact.html"><button type="button" class="introc__button">Contact us!</button></a>
         </div>
     </div>    
-    <button onclick="topFunction()" id="button" title="Go to top">Top</button>
+    <!-- <button onclick="topFunction()" id="button" title="Go to top">Top</button> -->
+    <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
     <footer class="footer"><!--Footer-->		
 		<div class="footer__container">
             <p class="footer__legales">© 2021 Aviel</p>
@@ -186,18 +189,14 @@
 	</footer><!--Footer fin-->
 
     
-    <!-- Jquery needed -->
+    <!--navbar & animation-->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/navbar.js"></script>
+    <!--navbar & animation-->
+    <!--TOP button--><script src="js/topbutton.js"></script>    
+    <!--animate & wow--><script src="js/wow.min.js"></script>        
+    <!-- Slider --><!-- <script src="js/slider.js"></script> -->  
 
-    <script src="js/script.js"></script>
-  
-    <script src="js/button.js"></script>
-    <!--animate & wow-->
-    <script src="js/wow.min.js"></script>
-    <script src="js/wowinit.js"></script>
-    <!-- Slider -->
-    <!-- <script src="js/slider.js"></script> -->
 </body>
 
 </html>

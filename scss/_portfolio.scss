@@ -14,7 +14,6 @@
         box-sizing: border-box;
         font-size: 10px;
         width: 100%;
-        /**max-width: 160em;**/
         margin: auto;
         padding: 0 4.5em;
         margin-bottom: 165px;
@@ -49,7 +48,7 @@
             p{
                 position: relative;
                 z-index: 99;
-                padding: 1em 0px 1em 0px;/*Important*/
+                padding: 1em 0px 1em 0px;
                 opacity: 0;
                 transition: opacity .5s;
                 color: white;                

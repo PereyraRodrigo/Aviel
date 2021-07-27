@@ -3,9 +3,10 @@
     width: 80%;
     margin: auto;
     margin-top: 135px;
+    color: $fontcolor3;
     &__title{
         text-align: center;
-        font-size: 50px;
+        font-size: 55px;
         margin-bottom: 95px;
     }
     &__boxes{
@@ -20,7 +21,6 @@
     }
     &__icons{
         width: 95px;
-        fill: white;
         margin: auto;
         justify-content: center;
         display: flex;
