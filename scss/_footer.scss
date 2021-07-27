@@ -6,10 +6,7 @@
         font-size: 0.875rem;
         font-weight: lighter;
         color: white;
-        display: flex;
-        &:hover{
-            color: #fde101;
-        }
+        display: flex;        
     }
     &__container{        
         display: flex;
@@ -17,15 +14,43 @@
         align-items: center;
         min-height: 4.375rem;        
     }
-    &__icons{
-        img{
-            width: 1.75rem;
-            filter: invert(97%) sepia(94%) saturate(30%) hue-rotate(70deg) brightness(106%) contrast(100%);
-            transition: transform .6s;
-            &:hover{
-                transform: scale(1.2);
-                filter: invert(76%) sepia(65%) saturate(671%) hue-rotate(2deg) brightness(107%) contrast(99%);
-            }
+    &__items {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        a:hover:before { 
+            background: #fde101; 
+        }
+    }    
+    &__icons {  
+        display: inline-flex;
+        font-size: 27px;  
+        text-decoration: none;  
+        color: white;
+        width: 57px;
+        height: 57px;   
+        transition: .5s linear;
+        position: relative;
+        z-index: 1;
+        margin: auto;
+        i{
+            margin: auto;
+        }
+        &:hover {
+            color: black;
+            &::before {  
+                transform: scale(1);
+              }
+        }
+        &::before {  
+            content: '';
+            position: absolute;    
+            width: 57px;
+            height: 57px;
+            background: #000;
+            border-radius: 50%;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
         }
     }
 }
