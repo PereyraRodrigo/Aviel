@@ -69,9 +69,9 @@ body ul a {
   color: black;
   margin: 0;
   position: relative;
-  left: 16px;
-  top: 13px;
-  font-size: 19px;
+  left: 12px;
+  top: 9px;
+  font-size: 30px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -94,10 +94,11 @@ body ul a {
     right: 10px;
   }
   .return-to-top i {
-    left: 11px;
-    top: 11px;
+    left: 9px;
+    top: 6px;
+    font-size: 24px;
   }
-  .return-to-top i:hover {
+  .return-to-top:hover i {
     top: 0px;
   }
 }
@@ -1361,6 +1362,15 @@ body ul a {
   .footer__container {
     width: 95%;
     margin: auto;
+  }
+  .footer__icons {
+    font-size: 25px;
+    width: 47px;
+    height: 47px;
+  }
+  .footer__icons::before {
+    width: 47px;
+    height: 47px;
   }
 }
 

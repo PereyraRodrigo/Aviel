@@ -61,5 +61,14 @@
             width: 95%;
             margin: auto;
         }
+        &__icons{
+            font-size: 25px;
+            width: 47px;
+            height: 47px;
+            &::before{
+            width: 47px;
+            height: 47px;
+            }
+        }                
     }
 }

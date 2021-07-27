@@ -14,9 +14,9 @@
 		color: black;
 		margin: 0;
 		position: relative;
-		left: 16px;
-		top: 13px;
-		font-size: 19px;    
+		left: 12px;
+		top: 9px;
+		font-size: 30px;    
 		transition: all 0.3s ease;
 	}
 	&:hover {
@@ -36,11 +36,14 @@
 		bottom: 13px;
 		right: 10px;
 		i{
-			left: 11px;
-			top: 11px;
-			&:hover{
+			left: 9px;
+			top: 6px;
+			font-size: 24px;			
+		}
+		&:hover{
+			i{
 				top: 0px;
-			}
+			}			
 		}
 	}
 	
