@@ -1,17 +1,18 @@
+/*NAVBAR contact section */
+
 $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
-        $('.navbar').addClass('navbar__animation');
+        $('.navbar2').addClass('navbar__animation2');
         console.log("OK");
     } else {
-        $('.navbar').removeClass('navbar__animation');
+        $('.navbar2').removeClass('navbar__animation2');
     }
 });
 
-$('.navTrigger').click(function () {
+$('.navTrigger2').click(function () {
     $(this).toggleClass('activ3');
     console.log("Clicked menu");
     $("#mainListDiv").toggleClass("show_list");
     $("#mainListDiv").fadeIn();
 
 });
-

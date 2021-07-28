@@ -69,9 +69,9 @@ body ul a {
   color: black;
   margin: 0;
   position: relative;
-  left: 12px;
-  top: 9px;
-  font-size: 30px;
+  left: 16px;
+  top: 15px;
+  font-size: 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -94,16 +94,16 @@ body ul a {
     right: 10px;
   }
   .return-to-top i {
-    left: 9px;
-    top: 6px;
-    font-size: 24px;
+    left: 11px;
+    top: 10px;
+    font-size: 19px;
   }
   .return-to-top:hover i {
     top: 0px;
   }
 }
 
-.navbar {
+.navbar, .navbar2 {
   width: 100%;
   height: 73px;
   position: fixed;
@@ -116,33 +116,33 @@ body ul a {
   transition: all 0.4s ease;
 }
 
-.navbar__aviel {
+.navbar__aviel, .navbar2__aviel {
   width: 131px;
 }
 
-.navbar div.navbar__logo {
+.navbar div.navbar__logo, .navbar2 div.navbar__logo {
   float: left;
   width: auto;
   height: auto;
   padding-left: 1.8125rem;
 }
 
-.navbar div.navbar__logo a {
+.navbar div.navbar__logo a, .navbar2 div.navbar__logo a {
   text-decoration: none;
   color: black;
   font-size: 2.375rem;
 }
 
-.navbar div.navbar__logo a:hover {
+.navbar div.navbar__logo a:hover, .navbar2 div.navbar__logo a:hover {
   color: #b900f6;
 }
 
-.navbar div.navbar__list {
+.navbar div.navbar__list, .navbar2 div.navbar__list {
   height: 4.0625rem;
   float: right;
 }
 
-.navbar div.navbar__list ul {
+.navbar div.navbar__list ul, .navbar2 div.navbar__list ul {
   width: 100%;
   height: 4.0625rem;
   display: -webkit-box;
@@ -153,47 +153,55 @@ body ul a {
   padding: 0;
 }
 
-.navbar div.navbar__list ul li {
+.navbar div.navbar__list ul li, .navbar2 div.navbar__list ul li {
   width: auto;
   height: 4.0625rem;
   padding: 0;
   padding-right: 29px;
 }
 
-.navbar div.navbar__list ul li a {
+.navbar div.navbar__list ul li a, .navbar2 div.navbar__list ul li a {
   text-decoration: none;
   color: black;
   line-height: 4.0625rem;
   font-size: 1.5rem;
 }
 
-.navbar div.navbar__list ul li a:hover {
+.navbar div.navbar__list ul li a:hover, .navbar2 div.navbar__list ul li a:hover {
   color: #fc48ac;
 }
 
-.navTrigger {
+.navbar--white div.navbar__list ul li a {
+  color: white;
+}
+
+.navbar2 div.navbar__list ul li a:hover {
+  color: #fde101;
+}
+
+.navTrigger, .navTrigger2 {
   display: none;
 }
 
 /**Media query stuff**/
 @media screen and (max-width: 768px) {
-  .navTrigger {
+  .navTrigger, .navTrigger2 {
     display: block;
   }
-  .navbar div.navbar__logo {
+  .navbar div.navbar__logo, .navbar2 div.navbar__logo {
     margin: auto;
     padding-top: 11px;
     padding-left: 18px;
   }
-  .navbar div.navbar__logo a {
+  .navbar div.navbar__logo a, .navbar2 div.navbar__logo a {
     font-size: 16px;
   }
-  .navbar div.navbar__list {
+  .navbar div.navbar__list, .navbar2 div.navbar__list {
     width: 100%;
     height: 0;
     overflow: hidden;
   }
-  .navbar div.navbar__list ul {
+  .navbar div.navbar__list ul, .navbar2 div.navbar__list ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -206,31 +214,31 @@ body ul a {
     background-color: black;
     background-position: center top;
   }
-  .navbar div.navbar__list ul li {
+  .navbar div.navbar__list ul li, .navbar2 div.navbar__list ul li {
     width: 100%;
     text-align: right;
   }
-  .navbar div.navbar__list ul li a {
+  .navbar div.navbar__list ul li a, .navbar2 div.navbar__list ul li a {
     color: white;
     text-align: center;
     width: 100%;
     font-size: 31px;
     padding: 20px;
   }
-  .navbar div.navbar__list ul li a:hover {
+  .navbar div.navbar__list ul li a:hover, .navbar2 div.navbar__list ul li a:hover {
     color: #fde101;
   }
-  .navbar div.show_list {
+  .navbar div.show_list, .navbar2 div.show_list {
     height: auto;
     display: none;
   }
-  .navbar div.media_button {
+  .navbar div.media_button, .navbar2 div.media_button {
     display: block;
   }
 }
 
 /* Animation */
-.navTrigger {
+.navTrigger, .navTrigger2 {
   cursor: pointer;
   width: 1.875rem;
   height: 1.5625rem;
@@ -241,7 +249,7 @@ body ul a {
   bottom: 0;
 }
 
-.navTrigger i {
+.navTrigger i, .navTrigger2 i {
   background-color: black;
   border-radius: 0.125rem;
   content: '';
@@ -250,14 +258,14 @@ body ul a {
   height: 0.25rem;
 }
 
-.navTrigger i:nth-child(1) {
+.navTrigger i:nth-child(1), .navTrigger2 i:nth-child(1) {
   -webkit-animation: outT 0.8s backwards;
   animation: outT 0.8s backwards;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
 
-.navTrigger i:nth-child(2) {
+.navTrigger i:nth-child(2), .navTrigger2 i:nth-child(2) {
   margin: 5px 0;
   -webkit-animation: outM 0.8s backwards;
   animation: outM 0.8s backwards;
@@ -265,31 +273,40 @@ body ul a {
   animation-direction: reverse;
 }
 
-.navTrigger i:nth-child(3) {
+.navTrigger i:nth-child(3), .navTrigger2 i:nth-child(3) {
   -webkit-animation: outBtm 0.8s backwards;
   animation: outBtm 0.8s backwards;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
 
-.navTrigger.activ3 i:nth-child(1) {
+.navTrigger.activ3 i:nth-child(1), .navTrigger2.activ3 i:nth-child(1) {
   -webkit-animation: inT 0.8s forwards;
   animation: inT 0.8s forwards;
 }
 
-.navTrigger.activ3 i:nth-child(2) {
+.navTrigger.activ3 i:nth-child(2), .navTrigger2.activ3 i:nth-child(2) {
   -webkit-animation: inM 0.8s forwards;
   animation: inM 0.8s forwards;
 }
 
-.navTrigger.activ3 i:nth-child(3) {
+.navTrigger.activ3 i:nth-child(3), .navTrigger2.activ3 i:nth-child(3) {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
+}
+
+.navTrigger2 i {
+  background-color: white;
 }
 
 .navbar__animation {
   padding: 0;
   background-color: #fde101;
+}
+
+.navbar__animation2 {
+  padding: 0;
+  background-color: black;
 }
 
 @-webkit-keyframes inM {
@@ -1049,7 +1066,7 @@ body ul a {
 
 .introc {
   background-color: white;
-  padding: 240px 50px;
+  padding: 255px 50px;
   color: black;
 }
 
@@ -1066,14 +1083,6 @@ body ul a {
 
 .introc__parag {
   padding-bottom: 30px;
-}
-
-.introc__button {
-  padding: 12px;
-  background-color: black;
-  color: white;
-  border-radius: 35px;
-  cursor: pointer;
 }
 
 @media all and (max-width: 1200px) {
@@ -1094,9 +1103,110 @@ body ul a {
   }
 }
 
+@-webkit-keyframes MoveUpInitial {
+  to {
+    -webkit-transform: translate3d(0, -105%, 0);
+            transform: translate3d(0, -105%, 0);
+  }
+}
+
+@keyframes MoveUpInitial {
+  to {
+    -webkit-transform: translate3d(0, -105%, 0);
+            transform: translate3d(0, -105%, 0);
+  }
+}
+
+@-webkit-keyframes MoveUpEnd {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes MoveUpEnd {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.button--narvi {
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  border: none;
+  padding: 24px 48px;
+  position: relative;
+  background: none;
+  color: #fff;
+  /* color: white; */
+  font-weight: bold;
+}
+
+.button--narvi::before, .button--narvi::after {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button--narvi::before {
+  content: '';
+  background: #000;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 80% 70%, 75% 70%, 0 70%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 80% 70%, 75% 70%, 0 70%);
+  transition: clip-path 0.3s cubic-bezier(0.7, 0, 0.2, 1), -webkit-clip-path 0.3s cubic-bezier(0.7, 0, 0.2, 1), transform 0.3s ease;
+  border-radius: 6px;
+}
+
+.button--narvi:hover > span {
+  -webkit-transform: translate3d(0, -1.111rem, 0);
+          transform: translate3d(0, -1.111rem, 0);
+  color: black;
+}
+
+.button--narvi:hover > span > span {
+  -webkit-animation: MoveUpInitial 0.15s forwards, MoveUpEnd 0.15s forwards 0.15s;
+          animation: MoveUpInitial 0.15s forwards, MoveUpEnd 0.15s forwards 0.15s;
+}
+
+.button--narvi:hover::before {
+  -webkit-transform: translate3d(0, -10px, 0);
+          transform: translate3d(0, -10px, 0);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 86% 100%, 75% 70%, 0 70%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 86% 100%, 75% 70%, 0 70%);
+  background: #fde101;
+}
+
+.button--narvi span {
+  display: block;
+  position: relative;
+}
+
+.button--narvi > span {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate3d(0, -0.556rem, 0);
+          transform: translate3d(0, -0.556rem, 0);
+  z-index: 1;
+  overflow: hidden;
+}
+
 .clients {
   font-family: "Lato", sans-serif;
-  padding: 270px 3.12rem;
+  padding: 215px 3.12rem;
   background-color: black;
   color: white;
 }
@@ -1190,12 +1300,92 @@ body ul a {
 }
 
 /***contact start***/
+.map {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  width: 100%;
+}
+
+.tempiframe {
+  height: 450px;
+  width: 100%;
+  background-color: #c8c8c8;
+}
+
+/* .contact{
+    background-color: #fde101;
+    color: black;
+    &__block{
+        @include display;
+        align-items: center;
+    }
+    &__title{
+        margin-top: 125px;
+        font-size: 2.5rem;        
+    }
+    &__txt{
+        width: 30%;
+        margin: 1.5625rem auto 5.9375rem auto;
+        font-size: 1.875rem;
+    }
+}
+.formu{
+    color: black;
+    &__block{
+        @include display;
+        align-items: center;
+        div{
+            width: 17%;
+            text-align: center;
+            @include display;
+            height: 22.5rem;
+            justify-content: space-between;
+            margin-bottom: 4.0625rem;
+        }
+        iframe{
+            width: 100%;
+	        overflow: hidden;
+        }
+    }
+	&__subtitle{
+        font-size: 1.3125rem;
+    }
+} */
 .contact {
-  background-color: #fde101;
-  color: black;
+  background-color: #171717;
+  color: white;
+}
+
+.contact__container {
+  width: 55%;
+  margin: auto;
+  padding-bottom: 120px;
+}
+
+.contact__phrase {
+  padding-top: 220px;
+  padding-bottom: 130px;
+  font-size: 96px;
+  font-family: "Lato", sans-serif;
+  width: 80%;
+  margin: auto;
 }
 
 .contact__block {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact__column1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,79 +1393,120 @@ body ul a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.contact__title {
-  margin-top: 125px;
-  font-size: 2.5rem;
+.contact__column1 div {
+  margin-bottom: 70px;
+}
+
+.contact__semititle {
+  font-size: 23px;
+  font-weight: bold;
+  /**CHANGE**/
 }
 
 .contact__txt {
-  width: 30%;
-  margin: 1.5625rem auto 5.9375rem auto;
-  font-size: 1.875rem;
+  font-size: 18px;
 }
 
-.formu {
-  color: black;
-}
-
-.formu__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.formu__block div {
-  width: 17%;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 22.5rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 4.0625rem;
-}
-
-.formu__block iframe {
-  width: 100%;
-  overflow: hidden;
-}
-
-.formu__subtitle {
-  font-size: 1.3125rem;
+.contact__title {
+  font-size: 32px;
 }
 
 /***contact end***/
-@media all and (max-width: 1200px) {
-  .contact__txt {
-    width: 60%;
+@media all and (max-width: 768px) {
+  .contact__container {
+    width: 90%;
   }
-  .formu__block div {
-    width: 37%;
+  .contact__phrase {
+    font-size: 66px;
   }
 }
 
-@media all and (max-width: 768px) {
-  .formu__block div {
-    width: 67%;
+@media all and (max-width: 576px) {
+  .contact__phrase {
+    font-size: 66px;
   }
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: white;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #fde101, #b900f6);
+     border-image: -webkit-gradient(linear, left top, right top, from(#fde101), to(#b900f6));
+     border-image: linear-gradient(to right, #fde101, #b900f6);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #fde101;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .footer {
@@ -1373,5 +1604,3 @@ body ul a {
     height: 47px;
   }
 }
-
-/*@import "mediaquerys";*/

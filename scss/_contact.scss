@@ -4,10 +4,16 @@
     display: flex;
     flex-direction: column;
 }
-@mixin color{
-    color: white;
+.map{
+    filter:grayscale(100%);
+    width: 100%;    
 }
-.contact{
+.tempiframe{
+    height: 450px;
+    width: 100%;
+    background-color: #c8c8c8;
+}
+/* .contact{
     background-color: #fde101;
     color: black;
     &__block{
@@ -45,34 +51,136 @@
 	&__subtitle{
         font-size: 1.3125rem;
     }
+} */
+
+.contact{
+    background-color: #171717;    
+    color: white;
+    &__container{
+        width: 55%;
+        margin: auto;        
+        padding-bottom: 120px;
+    }
+    &__phrase{
+        padding-top: 220px;
+        padding-bottom: 130px;
+        font-size: 96px;
+        font-family: $Font2;
+        width: 80%;
+        margin: auto;
+    }
+    &__block{
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__column1{
+        display: flex;
+        flex-direction: column;
+        div{
+            margin-bottom: 70px;
+        }
+    }    
+    &__semititle{
+        font-size: 23px;
+        font-weight: bold;/**CHANGE**/
+    }
+    &__txt{
+        font-size: 18px;
+    }
+    &__column2{
+    }
+    &__title{
+        font-size: 32px;
+    }
 }
+
 /***contact end***/
 
-@media all and (max-width: 1200px){
-    .contact{
-        &__txt{
-            width: 60%;
-        }
-    }
-    .formu{
-        &__block{
-            div{
-                width: 37%;
-            }
-        }
-    }
+@media all and (max-width: 1200px){    
 }
 
-@media all and (max-width: 768px){
-    .formu{
-        &__block{
-            div{
-                width: 67%;
-            }
+@media all and (max-width: 768px){   
+    .contact{
+        &__container{
+            width: 90%;
         }
-    }
+        &__phrase{
+            font-size: 66px;
+        }
+    } 
 }
 
 @media all and (max-width: 576px){
+    .contact{
+        &__phrase{
+            font-size: 66px;
+        }
+    } 
+}
 
+$primary: #fde101;
+$secondary: #b900f6;
+$white: white;
+$gray: white;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
 }

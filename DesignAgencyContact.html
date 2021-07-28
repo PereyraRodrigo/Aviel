@@ -10,10 +10,10 @@
 	<title>Aviel Design Agency Contact</title>
 </head>
 <body>	
-	<nav class="navbar"><!--Header-->
+	<nav class="navbar2 navbar--white"><!--Header-->
         <div class="navbar__container">
             <div class="navbar__logo">
-                <a href="index.html"><img class="navbar__aviel" src="media/logo.svg" alt="Aviel logo"></a>
+                <a href="index.html"><img class="navbar__aviel" src="media/logowhite.svg" alt="Aviel logo"></a>
             </div>
             <div id="mainListDiv" class="navbar__list">
                 <ul>
@@ -23,14 +23,14 @@
                     <li><a href="DesignAgencyContact.html">Contact</a></li>
                 </ul>
             </div>
-            <span class="navTrigger"><!--Hamburger Menu-->
+            <span class="navTrigger2"><!--Hamburger Menu-->
                 <i></i>
                 <i></i>
                 <i></i>
             </span><!--Hamburger Menu END-->
         </div>
     </nav><!--Header end-->     
-	<article class="contact">
+	<!-- <article class="contact">
 		<div>
 			<div class="contact__block">
 				<p class="contact__title Fweight2-bold">Contact us</p>
@@ -42,17 +42,64 @@
 				<div class="formu__block">
 					<div>
 						<p class="formu__subtitle Fweight2-bold">We would love to hear from you!</p>
+
+
+
 						<input type="text" required name="nombre" placeholder="Nombre y apellido">
 						<input type="email" required name="email" placeholder="Email">
 						<input type="text" required name="msj" placeholder="Asunto">
 						<textarea name="mensaje" placeholder="Mensaje"></textarea>
 						<input type="submit" name="enviar" value="Enviar">
+
+
+
 					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.851028634936!2d-58.42793353022459!3d-34.5924581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75ea916f355%3A0xf15778e2e5668bad!2zT01BVElDIHwgcHJvZ3JhbWFjacOzbiArIGRpc2XDsW8!5e0!3m2!1ses-419!2sar!4v1623227355151!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.851028634936!2d-58.42793353022459!3d-34.5924581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75ea916f355%3A0xf15778e2e5668bad!2zT01BVElDIHwgcHJvZ3JhbWFjacOzbiArIGRpc2XDsW8!5e0!3m2!1ses-419!2sar!4v1623227355151!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
 				</div>				
 			</form>
 		</div>
-	</article>
+	</article> -->
+    <div class="contact">
+        <p class="contact__phrase">
+            Tell us about your project
+        </p>
+        <div class="contact__container">            
+            <div class="contact__block">
+                <div class="contact__column1">
+                    <div>
+                        <p class="contact__semititle">Telephone</p>
+                        <p class="contact__txt">+54 9 11 6778-5412</p>
+                    </div>
+                    <div>
+                        <p class="contact__semititle">E-mail</p>
+                        <p class="contact__txt">hola@gmail.com</p>
+                    </div>
+                    <div>
+                        <p class="contact__semititle">Address</p>
+                        <p class="contact__txt">Av. Rivadavia 5580</p>
+                    </div>
+                </div>
+                <div class="contact__column2">
+                    <p class="contact__title">Tell us Everything</p>
+            
+                    <div class="form__group">
+                        <input type="text" class="form__field" placeholder="Name" name="name" id='name' required />
+                        <label for="name" class="form__label">Name</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__field" placeholder="Email" name="email" id='email' required />
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__field" placeholder="Project" name="name" id='project' required />
+                        <label for="project" class="form__label">Tell us about your project</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="tempiframe"></div> -->
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.851028634936!2d-58.42793353022459!3d-34.5924581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75ea916f355%3A0xf15778e2e5668bad!2zT01BVElDIHwgcHJvZ3JhbWFjacOzbiArIGRpc2XDsW8!5e0!3m2!1ses-419!2sar!4v1623227355151!5m2!1ses-419!2sar" height="450" style="border:0;" allowfullscreen=""></iframe>
 	<footer class="footer">		
 		<div class="footer__container">
             <p class="footer__legales">© 2021 Aviel</p>
@@ -77,8 +124,7 @@
 
 	<!--Navbar stuff-->
     <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/navbar.js"></script>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/navbar2.js"></script>
 
 </body>
 </html>
