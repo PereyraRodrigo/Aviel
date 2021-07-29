@@ -67,7 +67,7 @@ swipe {  0% {
     background: url(../media/slide4.jpg) no-repeat center center;
     animation-delay: 20s;
 }
-
+/**Mobile slider pics*/
 @media all and (max-width: 768px){
     .slide-1{
         background: url(../media/mobile_slider/1-768px.jpg) no-repeat center center;

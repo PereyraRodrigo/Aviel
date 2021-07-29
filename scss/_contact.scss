@@ -14,45 +14,6 @@
     width: 100%;
     background-color: #c8c8c8;
 }
-/* .contact{
-    background-color: #fde101;
-    color: black;
-    &__block{
-        @include display;
-        align-items: center;
-    }
-    &__title{
-        margin-top: 125px;
-        font-size: 2.5rem;        
-    }
-    &__txt{
-        width: 30%;
-        margin: 1.5625rem auto 5.9375rem auto;
-        font-size: 1.875rem;
-    }
-}
-.formu{
-    color: black;
-    &__block{
-        @include display;
-        align-items: center;
-        div{
-            width: 17%;
-            text-align: center;
-            @include display;
-            height: 22.5rem;
-            justify-content: space-between;
-            margin-bottom: 4.0625rem;
-        }
-        iframe{
-            width: 100%;
-	        overflow: hidden;
-        }
-    }
-	&__subtitle{
-        font-size: 1.3125rem;
-    }
-} */
 
 .contact{
     background-color: #171717;    
@@ -91,37 +52,10 @@
     &__txt{
         font-size: 18px;
     }
-    &__column2{
-    }
     &__title{
         font-size: 32px;
     }
 }
-
-/***contact end***/
-
-@media all and (max-width: 1200px){    
-}
-
-@media all and (max-width: 768px){   
-    .contact{
-        &__container{
-            width: 90%;
-        }
-        &__phrase{
-            font-size: 66px;
-        }
-    } 
-}
-
-@media all and (max-width: 576px){
-    .contact{
-        &__phrase{
-            font-size: 66px;
-        }
-    } 
-}
-
 $primary: #fde101;
 $secondary: #b900f6;
 $white: white;
@@ -181,4 +115,86 @@ $gray: white;
         font-size: 1rem;
         color: $gray;
     }
+}
+
+.modal-window {
+    & > div {
+      border-radius: 1rem;
+    }
+  }
+  
+  .modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  
+.modal-window {
+    font-family: $Font2;
+    color: black;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.77);;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    & > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #fde101;
+    }    
+    p {
+    font-weight: 700;
+    font-size: 150%;
+    margin: 0 0 15px;
+    }
+}
+  
+.modal-close {
+    color: black;
+    line-height: 50px;
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 46px;
+    text-decoration: none;
+    &:hover {
+        color: #fc48ac;
+    }
+}
+
+
+/***contact end***/
+
+@media all and (max-width: 768px){   
+    .contact{
+        &__container{
+            width: 90%;
+        }
+        &__phrase{
+            font-size: 66px;
+        }
+    } 
+}
+
+@media all and (max-width: 576px){
+    .contact{
+        &__phrase{
+            font-size: 66px;
+        }
+    } 
 }

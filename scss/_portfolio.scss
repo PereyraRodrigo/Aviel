@@ -1,7 +1,3 @@
-.portfolio__gallery div:hover p,
-.portfolio__gallery div:hover::before{
-    opacity: .9;
-}
 .portfolio{
     box-sizing: border-box;
     font-family: $Font2;
@@ -45,6 +41,9 @@
             align-items: center;
             justify-content: end;
             justify-content: flex-end;
+            &:hover p, &:hover::before{
+                opacity: .9;
+            }
             p{
                 position: relative;
                 z-index: 99;
