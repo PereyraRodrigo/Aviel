@@ -113,7 +113,7 @@ body ul a {
   background: none;
   color: #fff;
   margin-top: 25px;
-  margin-left: 110px;
+  margin-left: 194px;
 }
 
 .button--anthe::before, .button--anthe::after {
@@ -1411,17 +1411,20 @@ body ul a {
 }
 
 .contact__semititle {
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
   /**CHANGE**/
+  margin-bottom: 12px;
 }
 
 .contact__txt {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .contact__title {
-  font-size: 32px;
+  font-size: 24px;
+  max-width: 340px;
+  margin-bottom: 10px;
 }
 
 .form {
@@ -1472,9 +1475,9 @@ body ul a {
   padding-bottom: 6px;
   font-weight: 700;
   border-width: 3px;
-  -o-border-image: linear-gradient(to right, #fde101, #b900f6);
-     border-image: -webkit-gradient(linear, left top, right top, from(#fde101), to(#b900f6));
-     border-image: linear-gradient(to right, #fde101, #b900f6);
+  -o-border-image: linear-gradient(to right, #fde101, #fde101);
+     border-image: -webkit-gradient(linear, left top, right top, from(#fde101), to(#fde101));
+     border-image: linear-gradient(to right, #fde101, #fde101);
   border-image-slice: 1;
 }
 
@@ -1569,6 +1572,12 @@ body ul a {
 }
 
 /***contact end***/
+@media all and (max-width: 1200px) {
+  .contact__container {
+    width: 75%;
+  }
+}
+
 @media all and (max-width: 768px) {
   .contact__container {
     width: 90%;
