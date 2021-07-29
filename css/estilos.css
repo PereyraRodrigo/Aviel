@@ -1521,7 +1521,7 @@ body ul a {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 100;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -1575,6 +1575,9 @@ body ul a {
   }
   .contact__phrase {
     font-size: 66px;
+  }
+  .modal-window > div {
+    width: 60%;
   }
 }
 
