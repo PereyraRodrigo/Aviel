@@ -58,7 +58,7 @@
 .navbar--white div.navbar__list ul li a{
     color: white;
 }
-.navbar2 div.navbar__list ul li a:hover {
+.navbar--white div.navbar__list ul li a:hover {
     color: #fde101;
 }
 .navTrigger, .navTrigger2 {
@@ -72,7 +72,7 @@
     .navTrigger, .navTrigger2 {
         display: block;
     }
-    .navbar, .navbar2{
+    .navbar{
         div.navbar__logo {
             margin: auto;
             padding-top: 11px;

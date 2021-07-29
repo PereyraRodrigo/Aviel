@@ -103,6 +103,58 @@ body ul a {
   }
 }
 
+.button--anthe {
+  color: #fff;
+  background: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  border: none;
+  padding: 16px 48px;
+  position: relative;
+  background: none;
+  color: #fff;
+  margin-top: 25px;
+  margin-left: 110px;
+}
+
+.button--anthe::before, .button--anthe::after {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button--anthe::before {
+  content: '';
+  background: #000;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+  transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.button--anthe:hover span {
+  -webkit-transform: translate3d(-10px, 0, 0);
+          transform: translate3d(-10px, 0, 0);
+  color: black;
+}
+
+.button--anthe:hover::before {
+  background: #fde101;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.button--anthe span {
+  display: block;
+  mix-blend-mode: hard-light;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+  transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+  transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1), -webkit-transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
 .navbar, .navbar2 {
   width: 100%;
   height: 73px;
@@ -175,7 +227,7 @@ body ul a {
   color: white;
 }
 
-.navbar2 div.navbar__list ul li a:hover {
+.navbar--white div.navbar__list ul li a:hover {
   color: #fde101;
 }
 
@@ -188,20 +240,20 @@ body ul a {
   .navTrigger, .navTrigger2 {
     display: block;
   }
-  .navbar div.navbar__logo, .navbar2 div.navbar__logo {
+  .navbar div.navbar__logo {
     margin: auto;
     padding-top: 11px;
     padding-left: 18px;
   }
-  .navbar div.navbar__logo a, .navbar2 div.navbar__logo a {
+  .navbar div.navbar__logo a {
     font-size: 16px;
   }
-  .navbar div.navbar__list, .navbar2 div.navbar__list {
+  .navbar div.navbar__list {
     width: 100%;
     height: 0;
     overflow: hidden;
   }
-  .navbar div.navbar__list ul, .navbar2 div.navbar__list ul {
+  .navbar div.navbar__list ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -214,25 +266,25 @@ body ul a {
     background-color: black;
     background-position: center top;
   }
-  .navbar div.navbar__list ul li, .navbar2 div.navbar__list ul li {
+  .navbar div.navbar__list ul li {
     width: 100%;
     text-align: right;
   }
-  .navbar div.navbar__list ul li a, .navbar2 div.navbar__list ul li a {
+  .navbar div.navbar__list ul li a {
     color: white;
     text-align: center;
     width: 100%;
     font-size: 31px;
     padding: 20px;
   }
-  .navbar div.navbar__list ul li a:hover, .navbar2 div.navbar__list ul li a:hover {
+  .navbar div.navbar__list ul li a:hover {
     color: #fde101;
   }
-  .navbar div.show_list, .navbar2 div.show_list {
+  .navbar div.show_list {
     height: auto;
     display: none;
   }
-  .navbar div.media_button, .navbar2 div.media_button {
+  .navbar div.media_button {
     display: block;
   }
 }
@@ -1304,6 +1356,7 @@ body ul a {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   width: 100%;
+  margin-bottom: -3px;
 }
 
 .tempiframe {
@@ -1429,11 +1482,12 @@ body ul a {
   }
 }
 
-.form__group {
+.form {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
   width: 100%;
+  min-width: 250px;
 }
 
 .form__field {
@@ -1472,16 +1526,6 @@ body ul a {
   top: 20px;
 }
 
-.form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  font-size: 1rem;
-  color: white;
-}
-
 .form__field:focus {
   padding-bottom: 6px;
   font-weight: 700;
@@ -1503,10 +1547,19 @@ body ul a {
   font-weight: 700;
 }
 
-/* reset input */
 .form__field:required, .form__field:invalid {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: white;
 }
 
 .footer {
