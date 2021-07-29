@@ -1,9 +1,4 @@
 /***contact start***/
-@mixin display{
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-}
 .map{
     filter:grayscale(100%);
     width: 100%; 
@@ -59,10 +54,9 @@
         margin-bottom: 10px;        
     }
 }
-$primary: #fde101;
-$secondary: #fde101;
-$white: white;
-$gray: white;
+
+
+
 .form{
     position: relative;
     padding: 15px 0 0;
@@ -73,10 +67,10 @@ $gray: white;
         font-family: inherit;
         width: 100%;
         border: 0;
-        border-bottom: 2px solid $gray;
+        border-bottom: 2px solid white;
         outline: 0;
         font-size: 1.3rem;
-        color: $white;
+        color: white;
         padding: 7px 0;
         background: transparent;
         transition: border-color 0.2s;
@@ -97,13 +91,13 @@ $gray: white;
               display: block;
               transition: 0.2s;
               font-size: 1rem;
-              color: $primary;
+              color: #fde101;
               font-weight:700;    
             }
             padding-bottom: 6px;  
             font-weight: 700;
             border-width: 3px;
-            border-image: linear-gradient(to right, $primary,$secondary);
+            border-image: linear-gradient(to right, #fde101,#fde101);
             border-image-slice: 1;
         }
         &:required,&:invalid { 
@@ -116,20 +110,11 @@ $gray: white;
         display: block;
         transition: 0.2s;
         font-size: 1rem;
-        color: $gray;
+        color: white;
     }
 }
 
-.modal-window {
-    & > div {
-      border-radius: 1rem;
-    }
-  }
-  
-  .modal-window div:not(:last-of-type) {
-    margin-bottom: 15px;
-  }
-  
+
 .modal-window {
     font-family: $Font2;
     color: black;
@@ -150,6 +135,7 @@ $gray: white;
         pointer-events: auto;
     }
     & > div {
+    border-radius: 1rem;
     width: 400px;
     position: absolute;
     top: 50%;
@@ -212,5 +198,23 @@ $gray: white;
         &__phrase{
             font-size: 66px;
         }
+        &__semititle{
+            text-align: center;
+        }
     } 
+}
+@media all and (max-width: 415px){
+    .contact{
+        &__column2{
+            width: 80%;
+            a{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+    }
+    .button--anthe {
+        margin-left: 0;
+    }
 }

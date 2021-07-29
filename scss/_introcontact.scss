@@ -1,4 +1,5 @@
 .introc{
+    font-family: $Font2;
     background-color: white;
     padding: 255px 50px;
     color: $fontcolor3;
@@ -13,6 +14,7 @@
     }
     &__parag{
         padding-bottom: 30px;
+        font-size: 18px;
     }    
 }
 @media all and (max-width: 1200px){

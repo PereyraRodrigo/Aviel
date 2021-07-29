@@ -176,7 +176,7 @@ body ul a {
 
 .button--narvi::before {
   content: '';
-  background: #000;
+  background: #171717;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 80% 70%, 75% 70%, 0 70%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 80% 70%, 75% 70%, 0 70%);
   transition: clip-path 0.3s cubic-bezier(0.7, 0, 0.2, 1), -webkit-clip-path 0.3s cubic-bezier(0.7, 0, 0.2, 1), transform 0.3s ease;
@@ -695,7 +695,7 @@ body ul a {
 
 .agency {
   color: white;
-  background-color: black;
+  background-color: #171717;
   font-family: "Open Sans", sans-serif;
   overflow: hidden;
 }
@@ -1179,6 +1179,7 @@ body ul a {
 }
 
 .introc {
+  font-family: "Lato", sans-serif;
   background-color: white;
   padding: 255px 50px;
   color: black;
@@ -1197,6 +1198,7 @@ body ul a {
 
 .introc__parag {
   padding-bottom: 30px;
+  font-size: 18px;
 }
 
 @media all and (max-width: 1200px) {
@@ -1256,7 +1258,7 @@ body ul a {
 .clients {
   font-family: "Lato", sans-serif;
   padding: 215px 3.12rem;
-  background-color: black;
+  background-color: #171717;
   color: white;
 }
 
@@ -1507,14 +1509,6 @@ body ul a {
   color: white;
 }
 
-.modal-window > div {
-  border-radius: 1rem;
-}
-
-.modal-window div:not(:last-of-type) {
-  margin-bottom: 15px;
-}
-
 .modal-window {
   font-family: "Lato", sans-serif;
   color: black;
@@ -1539,6 +1533,7 @@ body ul a {
 }
 
 .modal-window > div {
+  border-radius: 1rem;
   width: 400px;
   position: absolute;
   top: 50%;
@@ -1593,6 +1588,26 @@ body ul a {
 @media all and (max-width: 576px) {
   .contact__phrase {
     font-size: 66px;
+  }
+  .contact__semititle {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .contact__column2 {
+    width: 80%;
+  }
+  .contact__column2 a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .button--anthe {
+    margin-left: 0;
   }
 }
 
