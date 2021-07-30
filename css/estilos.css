@@ -326,7 +326,7 @@ body ul a {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: black;
+    background-color: #000000f7;
     background-position: center top;
   }
   .navbar div.navbar__list ul li {
@@ -346,6 +346,7 @@ body ul a {
   .navbar div.show_list {
     height: auto;
     display: none;
+    margin-top: -12px;
   }
   .navbar div.media_button {
     display: block;
@@ -1356,12 +1357,6 @@ body ul a {
           filter: grayscale(100%);
   width: 100%;
   margin-bottom: -5px;
-}
-
-.tempiframe {
-  height: 450px;
-  width: 100%;
-  background-color: #c8c8c8;
 }
 
 .contact {

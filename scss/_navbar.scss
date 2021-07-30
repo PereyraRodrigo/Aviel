@@ -92,7 +92,7 @@
                 right: 0;
                 left: 0;
                 bottom: 0;
-                background-color: black;
+                background-color: #000000f7;
                 background-position: center top;
                 li {
                     width: 100%;
@@ -113,6 +113,7 @@
         div.show_list {
             height: auto;
             display: none;
+            margin-top: -12px;
         }
         div.media_button {
             display: block;
