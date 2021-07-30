@@ -1,6 +1,6 @@
 .return-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 8px;
     right: 20px;
 	background: #fde101;
     width: 50px;
@@ -10,6 +10,7 @@
     border-radius: 35px;
     display: none;
     transition: all 0.3s ease;
+	z-index: 100;
 	i {
 		color: black;
 		margin: 0;
@@ -35,6 +36,7 @@
 		height: 40px;
 		bottom: 13px;
 		right: 10px;
+		z-index: 99;
 		i{
 			left: 11px;
 			top: 10px;

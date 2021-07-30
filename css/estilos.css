@@ -50,7 +50,7 @@ body ul a {
 
 .return-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 8px;
   right: 20px;
   background: #fde101;
   width: 50px;
@@ -61,6 +61,7 @@ body ul a {
   display: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .return-to-top i {
@@ -90,6 +91,7 @@ body ul a {
     height: 40px;
     bottom: 13px;
     right: 10px;
+    z-index: 99;
   }
   .return-to-top i {
     left: 11px;
