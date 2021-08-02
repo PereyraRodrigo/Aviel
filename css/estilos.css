@@ -45,9 +45,9 @@ body ul {
 
 body ul a {
   text-decoration: none;
-  color: black;
 }
 
+/**Botones y active class**/
 .return-to-top {
   position: fixed;
   bottom: 8px;
@@ -104,7 +104,6 @@ body ul a {
 }
 
 .button--anthe {
-  color: #fff;
   background: none;
   cursor: pointer;
   font-family: "Lato", sans-serif;
@@ -113,6 +112,7 @@ body ul a {
   padding: 16px 48px;
   position: relative;
   background: none;
+  text-decoration: none;
   color: #fff;
   margin-top: 25px;
   margin-left: 194px;
@@ -247,7 +247,7 @@ body ul a {
 .navbar div.navbar__logo a {
   text-decoration: none;
   color: black;
-  font-size: 2.375rem;
+  font-size: 44px;
 }
 
 .navbar div.navbar__logo a:hover {

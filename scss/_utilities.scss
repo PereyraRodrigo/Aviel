@@ -1,3 +1,5 @@
+/**Botones y active class**/
+
 .return-to-top {
     position: fixed;
     bottom: 8px;
@@ -52,7 +54,6 @@
 }
 
 .button--anthe {
-	color: #fff;
 	background: none;
 	cursor: pointer;
     font-family: $Font2;
@@ -61,6 +62,7 @@
 	padding: 16px 48px;
 	position: relative;
 	background: none;
+	text-decoration: none;
     color: #fff;
 	margin-top: 25px;
 	margin-left: 194px;
