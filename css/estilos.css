@@ -1530,7 +1530,6 @@ body ul a {
 }
 
 .modal-window > div {
-  border-radius: 1rem;
   width: 400px;
   position: absolute;
   top: 50%;
